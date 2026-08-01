@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+:root {
+  /* Light mode — primary surface */
+  --cream: #f7f4ef;
+  --ink: #1a1a1a;
+  --anthracite: #0e0d0c;
+  /* Gold accents: decorative + large text; deep gold for small text on cream (AA) */
+  --gold: #b08d57;
+  --gold-deep: #7a5c28;
+  --gold-light: #d4b87a;
+  --bordeaux: #5c1a2e;
+  /* Muted on cream ≈ 7:1+ for body-adjacent copy */
+  --muted: #4a4540;
+  --muted-light: #6b6560;
+  --line: rgba(122, 92, 40, 0.35);
+  --line-soft: rgba(26, 26, 26, 0.1);
+
+  /* Lens accents — product only */
+  --lens-emerald: #2f5233;
+  --lens-sapphire: #1b3a57;
+  --lens-amber: #c17a2e;
+  --lens-hazel: #8a7a63;
+
+  --background: var(--cream);
+  --foreground: var(--ink);
+  --surface: #efebe3;
+  --surface-elevated: #ffffff;
+}
+
+@theme inline {
+  --color-cream: var(--cream);
+  --color-ink: var(--ink);
+  --color-anthracite: var(--anthracite);
+  --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
+  --color-gold-light: var(--gold-light);
+  --color-bordeaux: var(--bordeaux);
+  --color-muted: var(--muted);
+  --color-muted-light: var(--muted-light);
+  --color-line: var(--line);
+  --color-line-soft: var(--line-soft);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+
+  --color-lens-emerald: var(--lens-emerald);
+  --color-lens-sapphire: var(--lens-sapphire);
+  --color-lens-amber: var(--lens-amber);
+  --color-lens-hazel: var(--lens-hazel);
+
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-heading), ui-serif, Georgia, serif;
+  --font-arabic: var(--font-rtl-ar), ui-sans-serif, sans-serif;
+  --font-persian: var(--font-rtl-fa), ui-sans-serif, sans-serif;
+
+  --tracking-brand: 0.35em;
+  --tracking-elegant: 0.22em;
+  --tracking-wide: 0.12em;
+
+  --transition-duration-elegant: 700ms;
+  --transition-duration-slow: 1200ms;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), ui-sans-serif, sans-serif;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+html[lang="ar"] body {
+  font-family: var(--font-rtl-ar), ui-sans-serif, sans-serif;
+}
+
+html[lang="fa"] body {
+  font-family: var(--font-rtl-fa), ui-sans-serif, sans-serif;
+}
+
+html[lang="ar"] .font-display {
+  font-family: var(--font-rtl-ar), ui-sans-serif, sans-serif;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+html[lang="fa"] .font-display {
+  font-family: var(--font-rtl-fa), ui-sans-serif, sans-serif;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--gold) 40%, transparent);
+  color: var(--ink);
+}
+
+.font-display {
+  font-family: var(--font-heading), ui-serif, Georgia, serif;
+  font-weight: 400;
+}
+
+.section-dark {
+  background: var(--anthracite);
+  color: var(--cream);
+}
+
+.gold-rule {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--gold) 20%,
+    var(--gold) 80%,
+    transparent
+  );
+  opacity: 0.65;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@keyframes ken-burns {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+
+.ken-burns {
+  animation: ken-burns 22s ease-out forwards;
+}
+
+/* Prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .ken-burns {
+    animation: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Dark sections: ensure cream text stays opaque enough for AA */
+.section-dark .text-cream\/60,
+.section-dark .text-cream\/65,
+.section-dark .text-cream\/70 {
+  color: color-mix(in srgb, var(--cream) 88%, transparent);
+}

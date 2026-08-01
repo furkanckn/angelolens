@@ -1,0 +1,375 @@
+{
+  "meta": {
+    "title": "Angelo Lens — Вдохновлено духом Италии",
+    "description": "Сверхлюксовые цветные контактные линзы, созданные с итальянской дизайнерской чувствительностью. Откройте коллекции.",
+    "ogTitle": "Angelo Lens",
+    "ogDescription": "Maison цвета — итальянская дизайнерская чуткость для взгляда.",
+    "siteName": "Angelo Lens",
+    "keywords": "Angelo Lens, цветные контактные линзы, люкс, Милан, итальянский дизайн"
+  },
+  "nav": {
+    "home": "Главная",
+    "collections": "Коллекции",
+    "about": "Наша история",
+    "opticians": "Наши партнёры-оптики",
+    "contact": "Контакты"
+  },
+  "cta": {
+    "exploreCollection": "Открыть коллекцию",
+    "exploreCollections": "Открыть коллекции",
+    "findOpticians": "Смотреть наших партнёров-оптиков",
+    "contactUs": "Связаться с нами",
+    "joinNewsletter": "Подписаться на рассылку",
+    "findAuthorized": "Найти авторизованную оптику",
+    "readStory": "Читать нашу историю",
+    "scroll": "Листать",
+    "send": "Отправить",
+    "comingSoon": "Скоро"
+  },
+  "hero": {
+    "logotype": "Angelo Lens",
+    "eyebrow": "Milano",
+    "title": "Красота в каждом оттенке",
+    "subtitle": "Цветные линзы с тихой итальянской уверенностью — для присутствия, а не для зрелища."
+  },
+  "manifesto": {
+    "line1": "Увидьте красоту в каждом оттенке.",
+    "line2": "Откройте свои истинные цвета с уверенностью.",
+    "line3": "Вдохновлено духом Италии."
+  },
+  "spirit": {
+    "line1": "Увидьте красоту в каждом оттенке.",
+    "line2": "Откройте свои истинные цвета с уверенностью.",
+    "line3": "Вдохновлено духом Италии.",
+    "note": "Angelo Lens — дух итальянского бренда."
+  },
+  "collections": {
+    "eyebrow": "Коллекции",
+    "title": "Наши серии",
+    "subtitle": "Vibe, Line, Leo и Essence — у каждой свой характер.",
+    "vibe": {
+      "name": "Vibe",
+      "tagline": "Энергия на каждый день",
+      "description": "Vibe Green, Vibe Blue, Vibe Gray, Vibe Hazel — мягкий цвет с современным пульсом.",
+      "editorial": "Vibe — цвет, который идёт с вами. Достаточно заметный, достаточно мягкий для каждого дня.",
+      "suits": "Повседневная носка, естественный свет, свежий и лёгкий образ."
+    },
+    "line": {
+      "name": "Line",
+      "tagline": "Чёткая ясность",
+      "description": "Line Green, Line Blue, Line Olive — чистая выразительность с собранным краем.",
+      "editorial": "Line ведёт взгляд с точностью. Структурированный цвет, никогда резкий.",
+      "suits": "Тем, кто хочет более чёткое присутствие цвета без драмы."
+    },
+    "leo": {
+      "name": "Leo",
+      "tagline": "Тёплая интенсивность",
+      "description": "Leo Green и Leo Brown — более глубокая насыщенность с уверенным сиянием.",
+      "editorial": "Leo несёт тепло с тихой силой. Более глубокие тона, удерживающие свет.",
+      "suits": "Тёплые типы кожи, вечерний свет, более смелый, но элегантный переход."
+    },
+    "essence": {
+      "name": "Essence",
+      "tagline": "Сигнатурные оттенки",
+      "description": "Sage и Zone — два особых тона вне цветовых семейств.",
+      "editorial": "Essence — для оттенков, которые стоят сами по себе. Distinct, продуманные, узнаваемые.",
+      "suits": "Тем, кто ищет уникальный тон вне классического зелёного, синего или коричневого."
+    },
+    "shadesLabel": "Оттенки",
+    "suitsLabel": "Редакторская заметка"
+  },
+  "craft": {
+    "eyebrow": "Почему Angelo Lens",
+    "title": "Мастерство",
+    "items": {
+      "design": {
+        "title": "Итальянская чуткость",
+        "body": "Пропорция, сдержанность и элегантность. Angelo Lens ставит итальянскую дизайнерскую чуткость в центр бренда."
+      },
+      "comfort": {
+        "title": "Разработано для ежедневного комфорта",
+        "body": "Продумано для повседневного ношения и мягкого, точного ощущения на глазу."
+      },
+      "palette": {
+        "title": "Отобранная цветовая палитра",
+        "body": "Каждый тон выбран как пигмент — без погони за трендами, всегда с намерением."
+      },
+      "packaging": {
+        "title": "Элегантная упаковка",
+        "body": "Объект тихой роскоши — от первого касания до вскрытия."
+      }
+    }
+  },
+  "storyTeaser": {
+    "eyebrow": "Вдохновение",
+    "title": "Maison взгляда",
+    "body": "Рождено из убеждения, что цветные линзы принадлежат миру аромата и моды — а не клинике. Итальянская чуткость к цвету, присутствию и тихой элегантности."
+  },
+  "instagram": {
+    "eyebrow": "Следите",
+    "title": "В Instagram",
+    "handle": "@angelolens"
+  },
+  "newsletter": {
+    "title": "Оставайтесь рядом",
+    "subtitle": "Узнавайте первыми о новых коллекциях и закрытых показах.",
+    "placeholder": "Ваш email",
+    "submit": "Подписаться на рассылку",
+    "consentNewsletter": "I consent to receiving newsletters and to the processing of my email for this purpose. I may withdraw consent anytime."
+  },
+  "aboutPage": {
+    "title": "Наша история",
+    "eyebrow": "Angelo Lens · Milano",
+    "intro": "Angelo Lens — maison цвета. Мы основаны на простой убеждённости: цветные контактные линзы заслуживают того же почтения, что и haute parfumerie.",
+    "p1": "Angelo Lens формируется духом итальянского бренда. Пропорция, сдержанность и внимание к детали — в центре нашего языка.",
+    "p2": "Мы выстраиваем коллекции как цветовые серии — Vibe, Line, Leo и Essence — создаём упаковку как objet и говорим на языке, ближе к моде, чем к аптеке.",
+    "p3": "Без зрелища. Без клинического театра. Только eleganza — сдержанная, интимная и долговечная. Найдите Angelo Lens в избранных оптиках.",
+    "closing": "Вдохновлено духом Италии."
+  },
+  "opticiansPage": {
+    "title": "Наши партнёры-оптики",
+    "eyebrow": "Опыт",
+    "intro": "Откройте Angelo Lens у авторизованных оптик и избранных продавцов — где цвет переживается с заботой.",
+    "placeholderTitle": "Скоро",
+    "placeholderBody": "Локатор оптик и продавцов уточняется. А пока напишите нам — мы направим к ближайшему авторизованному партнёру."
+  },
+  "contactPage": {
+    "title": "Контакты",
+    "eyebrow": "Atelier",
+    "intro": "Для прессы, партнёрств и запросов оптик.",
+    "email": "info@angelolens.com",
+    "name": "Имя",
+    "emailLabel": "Email",
+    "message": "Сообщение",
+    "success": "Спасибо. Мы ответим с вниманием.",
+    "consent": "I have read the Privacy Policy and KVKK Disclosure Notice and consent to the processing of my personal data for this request.",
+    "consentNewsletter": "I consent to receiving newsletters and to the processing of my email for this purpose. I may withdraw consent anytime.",
+    "consentRequired": "Please confirm consent to continue.",
+    "privacyLink": "Privacy Policy",
+    "kvkkLink": "KVKK Notice"
+  },
+  "privacyPage": {
+    "title": "Privacy Policy",
+    "updated": "Last updated: August 2026",
+    "sections": {
+      "intro": {
+        "title": "Overview",
+        "body": "Angelo Lens respects your privacy. This policy explains which personal data we process when you visit angelolens.com, for what purposes, and what rights you have."
+      },
+      "controller": {
+        "title": "Data controller",
+        "body": "The data controller for this website is Angelo Lens. For privacy requests: info@angelolens.com."
+      },
+      "data": {
+        "title": "Data we process",
+        "body": "We may process information you provide voluntarily (name, email, message content via the contact form or newsletter) and technical data required to operate the site (IP address in server logs, browser type, and language preference)."
+      },
+      "purpose": {
+        "title": "Purposes and legal bases",
+        "body": "We process data to respond to enquiries, send newsletters you requested, maintain language preference, ensure site security, and improve the experience. Depending on your region, processing may be based on consent, contract steps you initiate, legitimate interest in operating the site, or legal obligation."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "body": "We use a language preference cookie (NEXT_LOCALE) and may use strictly necessary cookies for the site to function. Details are in our Cookie Policy."
+      },
+      "retention": {
+        "title": "Retention",
+        "body": "Contact messages are kept only as long as needed to handle your request. Newsletter data is kept until you unsubscribe. Technical logs are retained for a limited period for security."
+      },
+      "share": {
+        "title": "Sharing",
+        "body": "We do not sell personal data. We may share data with trusted service providers (hosting, email) only as needed to operate the site, under appropriate safeguards."
+      },
+      "rights": {
+        "title": "Your rights",
+        "body": "Depending on applicable law (including GDPR/KVKK where relevant), you may request access, correction, deletion, restriction, objection, or data portability. Contact info@angelolens.com. You may also lodge a complaint with your local supervisory authority."
+      },
+      "contact": {
+        "title": "Contact",
+        "body": "Privacy questions: info@angelolens.com."
+      }
+    }
+  },
+  "termsPage": {
+    "title": "Terms of Use",
+    "updated": "Last updated: August 2026",
+    "sections": {
+      "intro": {
+        "title": "Acceptance",
+        "body": "By using angelolens.com you agree to these terms. The site is a brand showcase; Angelo Lens does not sell products directly on this website."
+      },
+      "content": {
+        "title": "Intellectual property",
+        "body": "All text, images, logos, and design on this site belong to Angelo Lens or its licensors. You may not copy, modify, or distribute them without prior written permission."
+      },
+      "use": {
+        "title": "Acceptable use",
+        "body": "You must not misuse the site, attempt unauthorized access, or upload unlawful or harmful content via forms."
+      },
+      "accuracy": {
+        "title": "Information",
+        "body": "We aim for accurate brand presentation. Product availability and authorized opticians may vary by region. Colour appearance can differ by lighting, screen, and eye colour."
+      },
+      "health": {
+        "title": "Health notice",
+        "body": "Contact lenses are medical devices. Always follow advice from a qualified eye care professional. This site does not provide medical diagnosis or treatment."
+      },
+      "liability": {
+        "title": "Limitation of liability",
+        "body": "The site is provided for informational and brand purposes. To the extent permitted by law, Angelo Lens is not liable for indirect or consequential damages arising from use of the site."
+      },
+      "law": {
+        "title": "Governing law",
+        "body": "These terms are governed by the laws of the Republic of Türkiye, without prejudice to mandatory consumer protections in your country of residence."
+      },
+      "contact": {
+        "title": "Contact",
+        "body": "Questions about these terms: info@angelolens.com."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Вдохновлено духом Италии.",
+    "rights": "© {year} Angelo Lens · Milano",
+    "privacy": "Конфиденциальность",
+    "terms": "Условия использования",
+    "kvkk": "Уведомление KVKK",
+    "cookies": "Файлы cookie",
+    "legal": "Правовая информация",
+    "explore": "Разделы"
+  },
+  "language": {
+    "label": "Язык"
+  },
+  "a11y": {
+    "skipToContent": "Перейти к содержимому",
+    "openMenu": "Открыть меню",
+    "closeMenu": "Закрыть меню",
+    "mainNav": "Основная навигация",
+    "brandHome": "Главная Angelo Lens",
+    "language": "Выберите язык"
+  },
+  "brand": {
+    "name": "Angelo Lens"
+  },
+  "alts": {
+    "hero": "Редакционный портрет с выразительным взглядом",
+    "story": "Естественный портрет на открытом воздухе с ясным взглядом — история Angelo Lens",
+    "ig1": "Vibe Green — Angelo Lens eye close-up",
+    "ig2": "Vibe Blue — Angelo Lens eye close-up",
+    "ig3": "Line Olive — Angelo Lens eye close-up",
+    "ig4": "Leo Brown — Angelo Lens eye close-up",
+    "ig5": "Sage — Angelo Lens eye close-up",
+    "packaging": "Упаковочная коробка Angelo Contact Lens цвета шампань-золото с чёрным логотипом",
+    "logo": "Логотип Angelo Contact Lens",
+    "vibe": "Vibe Series — green, blue, gray and hazel lens colour study",
+    "vibeDetail": "Vibe Series detail — soft everyday lens tones",
+    "line": "Line Series — green, blue and olive lens colour study",
+    "lineDetail": "Line Series detail — defined clarity lens tones",
+    "leo": "Leo Series — green and brown lens colour study",
+    "leoDetail": "Leo Series detail — warm intensity lens tones",
+    "essence": "Essence Series — Sage and Zone signature shades",
+    "essenceDetail": "Essence Series detail — singular signature lens tones"
+  },
+  "lookCompare": {
+    "eyebrow": "New Looks",
+    "title": "Увидеть разницу",
+    "subtitle": "Проведите, чтобы сравнить естественный взгляд с Angelo Lens.",
+    "body": "Естественный цвет глаз прекрасен — а с Angelo Lens его можно изменить мягко или смело. Выберите оттенок и двигайте ползунок.",
+    "before": "Натуральный",
+    "after": "Angelo Lens",
+    "chooseShade": "Выберите оттенок",
+    "sliderLabel": "Сравнение натурального глаза и Angelo Lens"
+  },
+  "lensCare": {
+    "eyebrow": "Уход",
+    "title": "Носите бережно",
+    "subtitle": "Несколько спокойных правил, которые сохраняют цвет и комфорт.",
+    "items": {
+      "sleep": {
+        "title": "Не спите в линзах",
+        "body": "Не спите в линзах, если специалист не подтвердил безопасность. Глазам нужно дышать ночью."
+      },
+      "share": {
+        "title": "Никогда не делитесь",
+        "body": "Линзы — личная вещь. Совместное использование повышает риск раздражения и инфекции."
+      },
+      "water": {
+        "title": "Избегайте воды",
+        "body": "Не принимайте душ, не плавайте и не посещайте джакузи в линзах. Вода не заменяет раствор."
+      },
+      "exam": {
+        "title": "Регулярно к оптику",
+        "body": "Планируйте регулярные проверки зрения и подтверждайте посадку у авторизованного оптика."
+      }
+    }
+  },
+  "kvkkPage": {
+    "title": "KVKK Disclosure Notice",
+    "updated": "Last updated: August 2026",
+    "sections": {
+      "intro": {
+        "title": "Purpose of this notice",
+        "body": "This disclosure is prepared in accordance with Law No. 6698 on the Protection of Personal Data (KVKK) and informs you about the processing of your personal data when you use angelolens.com."
+      },
+      "controller": {
+        "title": "Data controller",
+        "body": "Data controller: Angelo Lens. Contact: info@angelolens.com."
+      },
+      "categories": {
+        "title": "Personal data categories",
+        "body": "Identity and contact data (name, email), communication content (messages), transaction security data (IP, log records), and marketing data if you join the newsletter."
+      },
+      "purposes": {
+        "title": "Purposes of processing",
+        "body": "Responding to requests; managing newsletter subscriptions; ensuring website security; remembering language preference; fulfilling legal obligations where applicable."
+      },
+      "method": {
+        "title": "Collection method and legal grounds",
+        "body": "Data is collected electronically via forms, cookies, and server logs. Processing may rely on KVKK Art. 5/2 (a)(c)(f) (legal obligation, establishment of a contract, legitimate interest) and, where required for marketing communications, explicit consent (Art. 5/1)."
+      },
+      "transfer": {
+        "title": "Transfer",
+        "body": "Personal data may be transferred to hosting and email service providers in Türkiye or abroad only as necessary to operate the site, with safeguards required by KVKK."
+      },
+      "retention": {
+        "title": "Retention period",
+        "body": "Data is stored for the period required by the purpose of processing and applicable legislation, then deleted, destroyed, or anonymized."
+      },
+      "rights": {
+        "title": "Your rights under KVKK Art. 11",
+        "body": "You may learn whether your data is processed; request information; learn the purpose and whether it is used accordingly; know third parties; request correction or deletion; object to results against you; and claim compensation for unlawful processing. Apply to info@angelolens.com."
+      },
+      "application": {
+        "title": "How to apply",
+        "body": "Send your KVKK requests to info@angelolens.com. We will respond within the periods set by law."
+      }
+    }
+  },
+  "cookiesPage": {
+    "title": "Cookie Policy",
+    "updated": "Last updated: August 2026",
+    "sections": {
+      "intro": {
+        "title": "What are cookies?",
+        "body": "Cookies are small text files stored on your device when you visit a website. This policy explains which cookies angelolens.com uses."
+      },
+      "types": {
+        "title": "Cookies we use",
+        "body": "Strictly necessary / preference: NEXT_LOCALE stores your language choice for up to one year so the site opens in your preferred language. Essential technical cookies may be used for security and basic operation."
+      },
+      "marketing": {
+        "title": "Analytics and marketing",
+        "body": "We do not currently use third-party advertising or analytics cookies. If this changes, we will update this policy and obtain consent where required."
+      },
+      "manage": {
+        "title": "Managing cookies",
+        "body": "You can delete or block cookies in your browser settings. Blocking the language cookie may mean your locale preference is not remembered."
+      },
+      "contact": {
+        "title": "Contact",
+        "body": "Questions: info@angelolens.com. See also our Privacy Policy and KVKK Disclosure Notice."
+      }
+    }
+  }
+}

@@ -1,0 +1,376 @@
+{
+  "meta": {
+    "title": "Angelo Lens — İtalyan İlhamıyla Renkli Lens",
+    "description": "Angelo Lens, İtalyan zarafet anlayışından ilham alan lüks renkli kontakt lens markası. Koleksiyonları keşfedin.",
+    "ogTitle": "Angelo Lens",
+    "ogDescription": "Her bakışta farklı bir renk. İtalyan zarafetinden ilhamla.",
+    "siteName": "Angelo Lens",
+    "keywords": "Angelo Lens, renkli kontakt lens, lüks lens, optik, İtalyan ilham"
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "collections": "Koleksiyonlar",
+    "about": "Hikayemiz",
+    "opticians": "Optik Bayilerimiz",
+    "contact": "İletişim"
+  },
+  "cta": {
+    "exploreCollection": "Koleksiyonu İncele",
+    "exploreCollections": "Koleksiyonları İncele",
+    "findOpticians": "Optik Bayilerimizi Görüntüle",
+    "contactUs": "Bize Ulaşın",
+    "joinNewsletter": "Bültene Katıl",
+    "findAuthorized": "Yetkili Optik Bul",
+    "readStory": "Hikayeyi Oku",
+    "scroll": "Aşağı Kaydır",
+    "send": "Gönder",
+    "comingSoon": "Yakında"
+  },
+  "hero": {
+    "logotype": "Angelo Lens",
+    "eyebrow": "İtalyan zarafetinden ilhamla",
+    "title": "Her bakışta farklı bir renk",
+    "subtitle": "Günlük kullanıma uygun renkli kontakt lensler. Abartısız, zarif ve kendine güvenli bir görünüm için."
+  },
+  "manifesto": {
+    "line1": "Her tonda güzellik vardır.",
+    "line2": "Kendi renginizi güvenle taşıyın.",
+    "line3": "İtalya’nın ruhundan ilhamla."
+  },
+  "spirit": {
+    "line1": "Her tonda güzellik vardır.",
+    "line2": "Kendi renginizi güvenle taşıyın.",
+    "line3": "İtalya’nın ruhundan ilhamla.",
+    "note": "Angelo Lens — İtalyan bir marka ruhuyla."
+  },
+  "collections": {
+    "eyebrow": "Koleksiyonlar",
+    "title": "Serilerimiz",
+    "subtitle": "Vibe, Line, Leo ve Essence. Her birinin kendi karakteri var.",
+    "vibe": {
+      "name": "Vibe",
+      "tagline": "Günlük enerji",
+      "description": "Vibe Green, Vibe Blue, Vibe Gray, Vibe Hazel — yumuşak ama modern bir renk etkisi.",
+      "editorial": "Vibe, günlük hayata uyumlu renkler sunar. Fark edilir ama abartmaz.",
+      "suits": "Gündüz kullanımı ve doğal, ferah bir bakış için."
+    },
+    "line": {
+      "name": "Line",
+      "tagline": "Net çizgi",
+      "description": "Line Green, Line Blue, Line Olive — daha tanımlı, dengeli bir renk geçişi.",
+      "editorial": "Line, bakışı daha net çizer. Keskin değil; ölçülü ve net.",
+      "suits": "Daha belirgin ama abartısız bir renk değişimi isteyenler için."
+    },
+    "leo": {
+      "name": "Leo",
+      "tagline": "Sıcak derinlik",
+      "description": "Leo Green ve Leo Brown — daha zengin, güvenli bir derinlik.",
+      "editorial": "Leo, sıcak ve güçlü bir bakış ister. Derin tonlar, sakin bir etki.",
+      "suits": "Sıcak ten tonları ve daha dolgun bir renk tercihi için."
+    },
+    "essence": {
+      "name": "Essence",
+      "tagline": "İmza tonlar",
+      "description": "Sage ve Zone — klasik ailelerin dışında iki özel ton.",
+      "editorial": "Essence, tek başına duran renkler içindir. Farklı, seçilmiş, akılda kalan.",
+      "suits": "Klasik yeşil, mavi veya kahveden farklı bir ton arayanlar için."
+    },
+    "shadesLabel": "Renk seçenekleri",
+    "suitsLabel": "Kime yakışır?"
+  },
+  "craft": {
+    "eyebrow": "Neden Angelo Lens?",
+    "title": "Özenle düşünülmüş detaylar",
+    "items": {
+      "design": {
+        "title": "İtalyan ilhamlı tasarım",
+        "body": "Oran, sadelik ve zarafet. Angelo Lens, İtalyan tasarım anlayışını marka kimliğinin merkezine koyar."
+      },
+      "comfort": {
+        "title": "Günlük konfor",
+        "body": "Uzun saatler takılmaya uygun, yumuşak ve rahat bir kullanım için geliştirildi."
+      },
+      "palette": {
+        "title": "Seçilmiş renkler",
+        "body": "Her ton bilinçli seçilir. Trend peşinde koşmayan, kalıcı bir palet."
+      },
+      "packaging": {
+        "title": "Özenli ambalaj",
+        "body": "Kutu da markanın bir parçasıdır. Açılış deneyimi sade ve kaliteli hissettirir."
+      }
+    }
+  },
+  "storyTeaser": {
+    "eyebrow": "Hikayemiz",
+    "title": "Renkli lens de zarif olabilir",
+    "body": "Angelo Lens, renkli kontakt lensin yalnızca farklı görünmek için değil, tarzı tamamlamak için de seçilebileceği inancıyla doğdu. İlhamımız İtalyan zarafeti; hedefimiz günlük hayatta rahatça taşınan, ölçülü bir güzellik."
+  },
+  "instagram": {
+    "eyebrow": "Sosyal",
+    "title": "Instagram’da Angelo Lens",
+    "handle": "@angelolens"
+  },
+  "newsletter": {
+    "title": "Yeniliklerden haberdar olun",
+    "subtitle": "Yeni koleksiyonlar ve özel duyurular için e-posta listemize katılın.",
+    "placeholder": "E-posta adresiniz",
+    "submit": "Katıl",
+    "consentNewsletter": "Bülten almak ve e-posta adresimin bu amaçla işlenmesi için açık rıza veriyorum. Rızamı dilediğim zaman geri alabilirim."
+  },
+  "aboutPage": {
+    "title": "Hikayemiz",
+    "eyebrow": "Angelo Lens",
+    "intro": "Angelo Lens, renkli kontakt lensi özenli ve lüks bir seçim olarak sunmak için kuruldu. Amacımız abartı değil; dengeli, zarif ve kullanılabilir bir görünüm.",
+    "p1": "Angelo Lens, İtalyan bir marka ruhuyla şekillenir. Oran, sadelik ve detaya özen — zarafeti tasarım dilimizin merkezine koyarız.",
+    "p2": "Koleksiyonlarımızı serilere ayırıyoruz: Vibe, Line, Leo ve Essence. Ambalajı da ürünün bir parçası gibi ele alıyoruz. Dilimiz klinik değil; moda ve güzellik dünyasına yakın.",
+    "p3": "Angelo Lens ürünlerini yetkili optiklerde bulabilirsiniz. Size uygun rengi seçmek için optisyen rehberliği önemlidir.",
+    "closing": "İtalya’nın ruhundan ilhamla."
+  },
+  "opticiansPage": {
+    "title": "Optik Bayilerimiz",
+    "eyebrow": "Nereden alınır?",
+    "intro": "Angelo Lens’i yetkili optiklerde deneyebilir; size en uygun tonu birlikte seçebilirsiniz.",
+    "placeholderTitle": "Liste yakında",
+    "placeholderBody": "Yetkili optik listesi hazırlanıyor. Şimdilik bize yazın; size en yakın optiği iletelim."
+  },
+  "contactPage": {
+    "title": "İletişim",
+    "eyebrow": "Yazın",
+    "intro": "Basın, iş birliği veya optik başvuruları için bize ulaşın.",
+    "email": "info@angelolens.com",
+    "name": "Adınız",
+    "emailLabel": "E-posta",
+    "message": "Mesajınız",
+    "success": "Teşekkürler. En kısa sürede dönüş yapacağız.",
+    "consent": "Gizlilik Politikası ve KVKK Aydınlatma Metni’ni okudum; bu talep kapsamında kişisel verilerimin işlenmesini kabul ediyorum.",
+    "consentNewsletter": "Bülten almak ve e-posta adresimin bu amaçla işlenmesi için açık rıza veriyorum. Rızamı dilediğim zaman geri alabilirim.",
+    "consentRequired": "Devam etmek için onay vermeniz gerekir.",
+    "privacyLink": "Gizlilik Politikası",
+    "kvkkLink": "KVKK Aydınlatma Metni"
+  },
+  "privacyPage": {
+    "title": "Gizlilik Politikası",
+    "updated": "Son güncelleme: Ağustos 2026",
+    "sections": {
+      "intro": {
+        "title": "Genel bakış",
+        "body": "Angelo Lens olarak gizliliğinize saygı duyarız. Bu politika, angelolens.com’u ziyaret ettiğinizde hangi kişisel verilerin hangi amaçlarla işlendiğini ve haklarınızı açıklar."
+      },
+      "controller": {
+        "title": "Veri sorumlusu",
+        "body": "Bu sitenin veri sorumlusu Angelo Lens’tir. Gizlilik talepleriniz için: info@angelolens.com."
+      },
+      "data": {
+        "title": "İşlenen veriler",
+        "body": "İletişim formu veya bülten kaydı sırasında gönüllü olarak verdiğiniz ad, e-posta ve mesaj içeriği ile sitenin işletilmesi için gerekli teknik veriler (sunucu kayıtlarında IP, tarayıcı türü, dil tercihi) işlenebilir."
+      },
+      "purpose": {
+        "title": "Amaçlar ve hukuki sebepler",
+        "body": "Verilerinizi sorularınıza yanıt vermek, talep ettiğiniz bülteni göndermek, dil tercihinizi hatırlamak, site güvenliğini sağlamak ve deneyimi iyileştirmek için işleriz. İşleme; rıza, sözleşmenin kurulması veya ifası için gerekli olması, meşru menfaat veya kanuni yükümlülük hukuki sebeplerine dayanabilir."
+      },
+      "cookies": {
+        "title": "Çerezler",
+        "body": "Dil tercihi için NEXT_LOCALE çerezini ve sitenin çalışması için zorunlu çerezleri kullanabiliriz. Ayrıntılar Çerez Politikası’ndadır."
+      },
+      "retention": {
+        "title": "Saklama süresi",
+        "body": "İletişim mesajları talebinizin sonuçlandırılması için gerekli süre kadar; bülten verileri abonelikten çıkana kadar; teknik kayıtlar güvenlik için sınırlı süre saklanır."
+      },
+      "share": {
+        "title": "Paylaşım",
+        "body": "Kişisel verilerinizi satmayız. Barındırma ve e-posta gibi güvenilir hizmet sağlayıcılarla yalnızca sitenin işletilmesi için gerekli ölçüde, uygun güvencelerle paylaşım yapılabilir."
+      },
+      "rights": {
+        "title": "Haklarınız",
+        "body": "6698 sayılı KVKK ve ilgili mevzuat kapsamında verilerinize erişme, düzeltme, silme, işlemeyi kısıtlama, itiraz ve şikâyet haklarınız bulunmaktadır. Talepleriniz için info@angelolens.com. Ayrıca Kişisel Verileri Koruma Kurulu’na başvurabilirsiniz."
+      },
+      "contact": {
+        "title": "İletişim",
+        "body": "Gizlilik soruları: info@angelolens.com."
+      }
+    }
+  },
+  "termsPage": {
+    "title": "Kullanım Şartları",
+    "updated": "Son güncelleme: Ağustos 2026",
+    "sections": {
+      "intro": {
+        "title": "Kabul",
+        "body": "angelolens.com’u kullanarak bu şartları kabul etmiş olursunuz. Site bir marka tanıtım alanıdır; bu web sitesinde doğrudan ürün satışı yapılmaz."
+      },
+      "content": {
+        "title": "Fikri mülkiyet",
+        "body": "Sitedeki yazı, görsel, logo ve tasarım Angelo Lens’e veya lisans verenlere aittir. Önceden yazılı izin olmadan kopyalanamaz, değiştirilemez veya dağıtılamaz."
+      },
+      "use": {
+        "title": "Kabul edilebilir kullanım",
+        "body": "Siteyi kötüye kullanamaz, yetkisiz erişim deneyemez veya formlar aracılığıyla hukuka aykırı ya da zararlı içerik gönderemezsiniz."
+      },
+      "accuracy": {
+        "title": "Bilgilendirme",
+        "body": "Marka sunumunda özen gösteririz. Ürün bulunabilirliği ve yetkili optikler bölgeye göre değişebilir. Renk görünümü ışık, ekran ve göz rengine göre farklılık gösterebilir."
+      },
+      "health": {
+        "title": "Sağlık uyarısı",
+        "body": "Kontakt lensler tıbbi cihazdır. Her zaman yetkili bir göz sağlığı uzmanının yönlendirmesine uyun. Bu site tıbbi teşhis veya tedavi sunmaz."
+      },
+      "liability": {
+        "title": "Sorumluluğun sınırları",
+        "body": "Site bilgilendirme ve marka tanıtımı amaçlıdır. Zorunlu hukuki düzenlemeler saklı kalmak kaydıyla, sitenin kullanımından doğabilecek dolaylı zararlardan Angelo Lens sorumlu tutulamaz."
+      },
+      "law": {
+        "title": "Uygulanacak hukuk",
+        "body": "Bu şartlar, zorunlu tüketici haklarınız saklı kalmak üzere Türkiye Cumhuriyeti hukukuna tabidir."
+      },
+      "contact": {
+        "title": "İletişim",
+        "body": "Şartlarla ilgili sorular: info@angelolens.com."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "İtalyan zarafetinden ilhamla.",
+    "rights": "© {year} Angelo Lens",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Şartları",
+    "kvkk": "KVKK Aydınlatma Metni",
+    "cookies": "Çerez Politikası",
+    "legal": "Yasal",
+    "explore": "Keşfet"
+  },
+  "language": {
+    "label": "Dil"
+  },
+  "a11y": {
+    "skipToContent": "İçeriğe geç",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat",
+    "mainNav": "Ana menü",
+    "brandHome": "Angelo Lens ana sayfa",
+    "language": "Dil seçimi"
+  },
+  "brand": {
+    "name": "Angelo Lens"
+  },
+  "alts": {
+    "hero": "Çarpıcı bakışlı editorial portre",
+    "story": "Doğal ışıkta, net bakışlı portre — Angelo Lens hikaye görseli",
+    "ig1": "Vibe Green — Angelo Lens göz yakın çekim",
+    "ig2": "Vibe Blue — Angelo Lens göz yakın çekim",
+    "ig3": "Line Olive — Angelo Lens göz yakın çekim",
+    "ig4": "Leo Brown — Angelo Lens göz yakın çekim",
+    "ig5": "Sage — Angelo Lens göz yakın çekim",
+    "packaging": "Angelo Lens altın rengi ürün kutusu",
+    "logo": "Angelo Lens logosu",
+    "lensProduct": "Renkli kontakt lens ürün görseli",
+    "vibe": "Vibe serisi — yeşil, mavi, gri ve ela lens ürün görseli",
+    "vibeDetail": "Vibe serisi detay — günlük yumuşak lens tonları",
+    "line": "Line serisi — yeşil, mavi ve zeytin lens ürün görseli",
+    "lineDetail": "Line serisi detay — net tanımlı lens tonları",
+    "leo": "Leo serisi — yeşil ve kahve lens ürün görseli",
+    "leoDetail": "Leo serisi detay — sıcak ve derin lens tonları",
+    "essence": "Essence serisi — Sage ve Zone imza tonları",
+    "essenceDetail": "Essence serisi detay — özel imza lens tonları"
+  },
+  "lookCompare": {
+    "eyebrow": "Yeni bakışlar",
+    "title": "Farkı görün",
+    "subtitle": "Kaydırarak doğal bakış ile Angelo Lens’i karşılaştırın.",
+    "body": "Doğal göz rengi de güzeldir; Angelo Lens ile onu yumuşak veya daha belirgin biçimde değiştirebilirsiniz. Bir ton seçin, kaydırıcıyı sürükleyin.",
+    "before": "Doğal",
+    "after": "Angelo Lens",
+    "chooseShade": "Ton seçin",
+    "sliderLabel": "Doğal göz ile Angelo Lens karşılaştırması"
+  },
+  "lensCare": {
+    "eyebrow": "Bakım",
+    "title": "Özenle kullanın",
+    "subtitle": "Rengi ve konforu koruyan sade kurallar.",
+    "items": {
+      "sleep": {
+        "title": "Lensle uyumayın",
+        "body": "Göz sağlığı uzmanınız uygun demedikçe lenslerinizle uyumayın. Gözlerinizin gece nefes alması gerekir."
+      },
+      "share": {
+        "title": "Lens paylaşmayın",
+        "body": "Lensler kişiseldir. Paylaşmak tahriş ve enfeksiyon riski taşır; her çift yalnızca bir kişiye aittir."
+      },
+      "water": {
+        "title": "Suyla temas ettirmeyin",
+        "body": "Lens takılıyken duş, yüzme veya jakuziden kaçının. Su, lens solüsyonunun yerine geçmez."
+      },
+      "exam": {
+        "title": "Düzenli optik kontrolü",
+        "body": "Göz kontrolünüzü aksatmayın; güvenli ve rahat kullanım için uyumu yetkili bir optikte doğrulatın."
+      }
+    }
+  },
+  "kvkkPage": {
+    "title": "KVKK Aydınlatma Metni",
+    "updated": "Son güncelleme: Ağustos 2026",
+    "sections": {
+      "intro": {
+        "title": "Metnin amacı",
+        "body": "Bu aydınlatma metni, 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) uyarınca hazırlanmış olup angelolens.com kullanımı sırasında kişisel verilerinizin işlenmesine ilişkin sizi bilgilendirir."
+      },
+      "controller": {
+        "title": "Veri sorumlusu",
+        "body": "Veri sorumlusu: Angelo Lens. İletişim: info@angelolens.com."
+      },
+      "categories": {
+        "title": "İşlenen kişisel veri kategorileri",
+        "body": "Kimlik ve iletişim (ad, e-posta), iletişim içeriği (mesaj), işlem güvenliği (IP, log kayıtları) ve bültene kaydolmanız hâlinde pazarlama iletişimine ilişkin veriler."
+      },
+      "purposes": {
+        "title": "İşleme amaçları",
+        "body": "Taleplerinize yanıt vermek; bülten aboneliğini yönetmek; site güvenliğini sağlamak; dil tercihini hatırlamak; gerektiğinde kanuni yükümlülükleri yerine getirmek."
+      },
+      "method": {
+        "title": "Toplama yöntemi ve hukuki sebepler",
+        "body": "Veriler formlar, çerezler ve sunucu kayıtları aracılığıyla elektronik ortamda toplanır. İşleme; KVKK m. 5/2 (a), (c), (f) (kanunlarda açıkça öngörülmesi, sözleşmenin kurulması/ifası, meşru menfaat) ve pazarlama iletişimi için gerektiğinde açık rıza (m. 5/1) hukuki sebeplerine dayanır."
+      },
+      "transfer": {
+        "title": "Aktarım",
+        "body": "Kişisel verileriniz, sitenin işletilmesi için gerekli olduğu ölçüde barındırma ve e-posta hizmet sağlayıcılarına, KVKK’da öngörülen güvencelerle yurt içinde veya yurt dışında aktarılabilir."
+      },
+      "retention": {
+        "title": "Saklama süresi",
+        "body": "Veriler, işleme amacının gerektirdiği ve ilgili mevzuatın öngördüğü süre boyunca saklanır; süre sonunda silinir, yok edilir veya anonim hâle getirilir."
+      },
+      "rights": {
+        "title": "KVKK m. 11 kapsamındaki haklarınız",
+        "body": "Kişisel verilerinizin işlenip işlenmediğini öğrenme; bilgi talep etme; amacını ve amaca uygun kullanılıp kullanılmadığını öğrenme; yurt içinde/yurt dışında aktarıldığı üçüncü kişileri bilme; düzeltme veya silme isteme; otomatik sistemler ile analiz sonucu aleyhinize bir sonucun ortaya çıkmasına itiraz etme; kanuna aykırı işleme nedeniyle zararın giderilmesini talep etme haklarına sahipsiniz. Başvuru: info@angelolens.com."
+      },
+      "application": {
+        "title": "Başvuru yöntemi",
+        "body": "KVKK taleplerinizi info@angelolens.com adresine iletebilirsiniz. Kanun ve ilgili yönetmelikte öngörülen süreler içinde yanıtlanır."
+      }
+    }
+  },
+  "cookiesPage": {
+    "title": "Çerez Politikası",
+    "updated": "Son güncelleme: Ağustos 2026",
+    "sections": {
+      "intro": {
+        "title": "Çerez nedir?",
+        "body": "Çerezler, bir web sitesini ziyaret ettiğinizde cihazınıza kaydedilen küçük metin dosyalarıdır. Bu politika, angelolens.com’da hangi çerezlerin kullanıldığını açıklar."
+      },
+      "types": {
+        "title": "Kullandığımız çerezler",
+        "body": "Zorunlu / tercih çerezleri: NEXT_LOCALE, dil tercihinizi en fazla bir yıl saklar; site tercih ettiğiniz dilde açılsın diye kullanılır. Güvenlik ve temel işleyiş için zorunlu teknik çerezler de kullanılabilir."
+      },
+      "marketing": {
+        "title": "Analitik ve pazarlama",
+        "body": "Şu anda üçüncü taraf reklam veya analitik çerezi kullanmıyoruz. Bu durum değişirse bu politika güncellenir ve gerektiğinde rızanız alınır."
+      },
+      "manage": {
+        "title": "Çerezleri yönetme",
+        "body": "Tarayıcı ayarlarından çerezleri silebilir veya engelleyebilirsiniz. Dil çerezini engellemeniz, dil tercihinizin hatırlanmamasına yol açabilir."
+      },
+      "contact": {
+        "title": "İletişim",
+        "body": "Sorularınız için: info@angelolens.com. Ayrıca Gizlilik Politikası ve KVKK Aydınlatma Metni’ne bakınız."
+      }
+    }
+  }
+}
