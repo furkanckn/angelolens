@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { getSiteImage } from "@/lib/cms";
+import { loadSiteImages } from "@/lib/cms-client";
 import { SITE_URL } from "@/lib/site";
 
 type Props = {
@@ -31,7 +31,8 @@ export default async function AboutPage({ params }: Props) {
   setRequestLocale(locale);
   const t = await getTranslations("aboutPage");
   const alts = await getTranslations("alts");
-  const storySrc = await getSiteImage("story");
+  const images = await loadSiteImages();
+  const storySrc = images.story;
 
   return (
     <article className="bg-cream">

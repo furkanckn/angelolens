@@ -1,10 +1,10 @@
 import { NextResponse } from "next/server";
-import { readSiteImages } from "@/lib/cms";
+import { loadSiteImages } from "@/lib/cms-client";
 
 export const dynamic = "force-dynamic";
 
 export async function GET() {
-  const images = await readSiteImages();
+  const images = await loadSiteImages();
   return NextResponse.json(images, {
     headers: { "Cache-Control": "no-store" },
   });

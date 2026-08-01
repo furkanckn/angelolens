@@ -1,7 +1,7 @@
-import { isAdminAuthenticated } from "@/lib/admin-auth";
-import { AdminApp } from "./AdminApp";
+import { redirect } from "next/navigation";
+import { cmsAdminUrl } from "@/lib/cms-client";
 
-export default async function AdminPage() {
-  const authed = await isAdminAuthenticated();
-  return <AdminApp initiallyAuthed={authed} />;
+/** Legacy Next admin → Laravel Filament panel */
+export default function AdminRedirectPage() {
+  redirect(cmsAdminUrl());
 }

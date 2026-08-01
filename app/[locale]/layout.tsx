@@ -13,7 +13,7 @@ import { Footer } from "@/components/Footer";
 import { SkipToContent } from "@/components/SkipToContent";
 import { SiteImagesProvider } from "@/components/SiteImagesProvider";
 import { isRtlLocale, routing } from "@/i18n/routing";
-import { readSiteImages } from "@/lib/cms";
+import { loadSiteImages } from "@/lib/cms-client";
 import { SITE_URL } from "@/lib/site";
 
 const display = Cormorant_Garamond({
@@ -119,7 +119,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   setRequestLocale(locale);
   const messages = await getMessages();
   const dir = isRtlLocale(locale) ? "rtl" : "ltr";
-  const siteImages = await readSiteImages();
+  const siteImages = await loadSiteImages();
 
   return (
     <html

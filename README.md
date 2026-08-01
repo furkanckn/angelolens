@@ -6,7 +6,8 @@ Ultra-luxury coloured contact lens brand showcase for [angelolens.com](https://a
 
 ## Stack
 
-- Next.js (App Router) + TypeScript
+- Next.js (App Router) + TypeScript — public site
+- Laravel + Filament (`backend/`) — content CMS (texts + images)
 - Tailwind CSS v4 — cream `#F7F4EF` + anthracite `#0E0D0C` + gold accents (AA-checked)
 - Framer Motion (+ `prefers-reduced-motion`)
 - next-intl — EN / TR / DE / IT / RU / AR / FA (RTL for AR & FA)
@@ -16,10 +17,17 @@ Ultra-luxury coloured contact lens brand showcase for [angelolens.com](https://a
 ## Develop
 
 ```bash
+# CMS (Filament admin + API)
+cd backend && php artisan serve --host=127.0.0.1 --port=8000
+
+# Site (another terminal)
+cp .env.example .env.local   # set CMS_URL=http://127.0.0.1:8000
 npm run dev
 ```
 
-Optional: copy `.env.example` → `.env.local` and set `NEXT_PUBLIC_SITE_URL`.
+Admin panel: http://127.0.0.1:8000/admin  
+Default login: `info@angelolens.com` / `angelo`  
+See [backend/README.md](backend/README.md).
 
 ## Accessibility & performance notes
 

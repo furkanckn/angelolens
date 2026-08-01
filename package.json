@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "cms": "npm run cms:serve",
+    "cms:serve": "cd backend && php artisan serve --host=127.0.0.1 --port=8000"
   },
   "dependencies": {
     "framer-motion": "^12.43.0",

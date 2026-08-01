@@ -1,5 +1,6 @@
 import { getRequestConfig } from "next-intl/server";
-import { routing, isValidLocale } from "./routing";
+import { routing, isValidLocale, type Locale } from "./routing";
+import { loadMessages } from "@/lib/cms-client";
 
 export default getRequestConfig(async ({ requestLocale }) => {
   let locale = await requestLocale;
@@ -8,8 +9,10 @@ export default getRequestConfig(async ({ requestLocale }) => {
     locale = routing.defaultLocale;
   }
 
+  const activeLocale = locale as Locale;
+
   return {
-    locale,
-    messages: (await import(`../messages/${locale}.json`)).default,
+    locale: activeLocale,
+    messages: await loadMessages(activeLocale),
   };
 });
