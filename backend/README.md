@@ -19,7 +19,7 @@ php artisan storage:link
 php artisan serve --host=127.0.0.1 --port=8000
 ```
 
-Seed imports texts from `../messages/*.json` and images from `../content/images.json`.
+Seed imports texts from `../frontend/messages/*.json` and images from `../frontend/content/images.json`.
 
 ## Notes
 

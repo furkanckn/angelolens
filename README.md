@@ -2,59 +2,49 @@
 
 Ultra-luxury coloured contact lens brand showcase for [angelolens.com](https://angelolens.com).
 
-**Not e-commerce** — brand image only. No cart, pricing, or purchase CTAs. Cosmetic / non-prescription positioning for this site.
+**Not e-commerce** — brand image only. No cart, pricing, or purchase CTAs.
+
+## Repo layout
+
+```
+angelolens/
+  frontend/   Next.js site (Vercel Root Directory = frontend)
+  backend/    Laravel + Filament CMS
+  assets/     local working files (not required for production)
+```
 
 ## Stack
 
-- Next.js (App Router) + TypeScript — public site
-- Laravel + Filament (`backend/`) — content CMS (texts + images)
-- Tailwind CSS v4 — cream `#F7F4EF` + anthracite `#0E0D0C` + gold accents (AA-checked)
-- Framer Motion (+ `prefers-reduced-motion`)
-- next-intl — EN / TR / DE / IT / RU / AR / FA (RTL for AR & FA)
-- Typography via `next/font`: Cormorant Garamond + Manrope; Noto Naskh Arabic / Vazirmatn
-- Geo locale redirect via middleware (`NEXT_LOCALE` cookie, 1 year)
+- **frontend:** Next.js (App Router) + TypeScript + Tailwind CSS v4 + next-intl
+- **backend:** Laravel + Filament (texts + images CMS)
 
 ## Develop
 
 ```bash
-# CMS (Filament admin + API)
+# CMS
 cd backend && php artisan serve --host=127.0.0.1 --port=8000
 
-# Site (another terminal)
-cp .env.example .env.local   # set CMS_URL=http://127.0.0.1:8000
+# Site
+cd frontend
+cp .env.example .env.local   # CMS_URL=http://127.0.0.1:8000
+npm install
 npm run dev
 ```
 
-Admin panel: http://127.0.0.1:8000/admin  
-Default login: `info@angelolens.com` / `angelo`  
-See [backend/README.md](backend/README.md).
+Or from repo root:
 
-## Accessibility & performance notes
+```bash
+npm run cms
+npm run dev
+```
 
-- Skip link, focus outlines, localized image `alt` strings in all 7 locales
-- Sticky header opacifies on scroll; language switcher always visible (VPN/geo mismatches are expected)
-- Images via `next/image`; fonts via `next/font` (CLS-safe)
-- Contrast targets WCAG AA (cream↔anthracite, ink/muted/gold-deep on cream)
+Admin: http://127.0.0.1:8000/admin  
+Login: `info@angelolens.com` / `angelo`  
+Details: [backend/README.md](backend/README.md) · [frontend](frontend/)
 
-### Lighthouse (suggested)
+## Vercel
 
-After `npm run build && npm start`, run Chrome Lighthouse on `/en` and `/tr` (mobile):
-
-1. Performance — confirm LCP image priority on hero; keep SVG placeholders until real assets
-2. Accessibility — axe/Lighthouse: contrast, names, landmarks (`#main-content`)
-3. SEO — localized title/description/OG; hreflang via `alternates.languages`
-
-## Brand / legal guardrails
-
-- Italian positioning is **design heritage / narrative** only — no fake Italian company address, registration number, or confusingly similar third-party marks
-- No unverified medical claims; comfort language only
-- Geo IP can mis-detect (VPN); manual language switcher is intentional
-
-## Routes
-
-| Path | Purpose |
-|------|---------|
-| `/` | Home (hero → manifesto → collections → craft → story → IG → newsletter) |
-| `/collections` · `/collections/[slug]` | Gallery + detail + swatches |
-| `/about` · `/opticians` · `/contact` | Story, optician locator, contact |
-| `/privacy` · `/terms` | Legal |
+1. Import this GitHub repo
+2. **Root Directory** = `frontend`
+3. Framework: Next.js
+4. Env: `CMS_URL` / `NEXT_PUBLIC_CMS_URL` = your Laravel API URL

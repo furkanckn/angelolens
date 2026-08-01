@@ -11,8 +11,8 @@ class CmsSeeder extends Seeder
 {
     public function run(): void
     {
-        $messagesRoot = dirname(base_path()).'/messages';
-        $imagesFile = dirname(base_path()).'/content/images.json';
+        $messagesRoot = dirname(base_path()).'/frontend/messages';
+        $imagesFile = dirname(base_path()).'/frontend/content/images.json';
 
         if (is_dir($messagesRoot)) {
             foreach (glob($messagesRoot.'/*.json') ?: [] as $file) {
