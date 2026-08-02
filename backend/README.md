@@ -1,7 +1,7 @@
 # Angelo Lens CMS (Laravel + Filament)
 
 Panel: http://127.0.0.1:8000/admin  
-Login: `info@angelolens.com` / `angelo`  
+Login: `info.angelolens@gmail.com` / `angelo`  
 API:
 - `GET /api/v1/messages/{locale}`
 - `GET /api/v1/images`

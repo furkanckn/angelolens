@@ -39,7 +39,7 @@ npm run dev
 ```
 
 Admin: http://127.0.0.1:8000/admin  
-Login: `info@angelolens.com` / `angelo`  
+Login: `info.angelolens@gmail.com` / `angelo`  
 Details: [backend/README.md](backend/README.md) · [frontend](frontend/)
 
 ## Vercel

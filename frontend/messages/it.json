@@ -136,8 +136,8 @@
   "contactPage": {
     "title": "Contatti",
     "eyebrow": "Atelier",
-    "intro": "Per stampa, partnership e richieste degli ottici.",
-    "email": "info@angelolens.com",
+    "intro": "Per stampa, partnership e richieste degli ottici, scriveteci via e-mail.",
+    "email": "info.angelolens@gmail.com",
     "name": "Nome",
     "emailLabel": "Email",
     "message": "Messaggio",
@@ -158,7 +158,7 @@
       },
       "controller": {
         "title": "Data controller",
-        "body": "The data controller for this website is Angelo Lens. For privacy requests: info@angelolens.com."
+        "body": "The data controller for this website is Angelo Lens. For privacy requests: info.angelolens@gmail.com."
       },
       "data": {
         "title": "Data we process",
@@ -182,11 +182,11 @@
       },
       "rights": {
         "title": "Your rights",
-        "body": "Depending on applicable law (including GDPR/KVKK where relevant), you may request access, correction, deletion, restriction, objection, or data portability. Contact info@angelolens.com. You may also lodge a complaint with your local supervisory authority."
+        "body": "Depending on applicable law (including GDPR/KVKK where relevant), you may request access, correction, deletion, restriction, objection, or data portability. Contact info.angelolens@gmail.com. You may also lodge a complaint with your local supervisory authority."
       },
       "contact": {
         "title": "Contact",
-        "body": "Privacy questions: info@angelolens.com."
+        "body": "Privacy questions: info.angelolens@gmail.com."
       }
     }
   },
@@ -224,7 +224,7 @@
       },
       "contact": {
         "title": "Contact",
-        "body": "Questions about these terms: info@angelolens.com."
+        "body": "Questions about these terms: info.angelolens@gmail.com."
       }
     }
   },
@@ -314,7 +314,7 @@
       },
       "controller": {
         "title": "Data controller",
-        "body": "Data controller: Angelo Lens. Contact: info@angelolens.com."
+        "body": "Data controller: Angelo Lens. Contact: info.angelolens@gmail.com."
       },
       "categories": {
         "title": "Personal data categories",
@@ -338,11 +338,11 @@
       },
       "rights": {
         "title": "Your rights under KVKK Art. 11",
-        "body": "You may learn whether your data is processed; request information; learn the purpose and whether it is used accordingly; know third parties; request correction or deletion; object to results against you; and claim compensation for unlawful processing. Apply to info@angelolens.com."
+        "body": "You may learn whether your data is processed; request information; learn the purpose and whether it is used accordingly; know third parties; request correction or deletion; object to results against you; and claim compensation for unlawful processing. Apply to info.angelolens@gmail.com."
       },
       "application": {
         "title": "How to apply",
-        "body": "Send your KVKK requests to info@angelolens.com. We will respond within the periods set by law."
+        "body": "Send your KVKK requests to info.angelolens@gmail.com. We will respond within the periods set by law."
       }
     }
   },
@@ -368,7 +368,7 @@
       },
       "contact": {
         "title": "Contact",
-        "body": "Questions: info@angelolens.com. See also our Privacy Policy and KVKK Disclosure Notice."
+        "body": "Questions: info.angelolens@gmail.com. See also our Privacy Policy and KVKK Disclosure Notice."
       }
     }
   }

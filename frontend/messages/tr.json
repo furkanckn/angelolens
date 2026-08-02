@@ -136,8 +136,8 @@
   "contactPage": {
     "title": "İletişim",
     "eyebrow": "Yazın",
-    "intro": "Basın, iş birliği veya optik başvuruları için bize ulaşın.",
-    "email": "info@angelolens.com",
+    "intro": "Basın, iş birliği veya optik başvuruları için bize e-posta yazın.",
+    "email": "info.angelolens@gmail.com",
     "name": "Adınız",
     "emailLabel": "E-posta",
     "message": "Mesajınız",
@@ -158,7 +158,7 @@
       },
       "controller": {
         "title": "Veri sorumlusu",
-        "body": "Bu sitenin veri sorumlusu Angelo Lens’tir. Gizlilik talepleriniz için: info@angelolens.com."
+        "body": "Bu sitenin veri sorumlusu Angelo Lens’tir. Gizlilik talepleriniz için: info.angelolens@gmail.com."
       },
       "data": {
         "title": "İşlenen veriler",
@@ -182,11 +182,11 @@
       },
       "rights": {
         "title": "Haklarınız",
-        "body": "6698 sayılı KVKK ve ilgili mevzuat kapsamında verilerinize erişme, düzeltme, silme, işlemeyi kısıtlama, itiraz ve şikâyet haklarınız bulunmaktadır. Talepleriniz için info@angelolens.com. Ayrıca Kişisel Verileri Koruma Kurulu’na başvurabilirsiniz."
+        "body": "6698 sayılı KVKK ve ilgili mevzuat kapsamında verilerinize erişme, düzeltme, silme, işlemeyi kısıtlama, itiraz ve şikâyet haklarınız bulunmaktadır. Talepleriniz için info.angelolens@gmail.com. Ayrıca Kişisel Verileri Koruma Kurulu’na başvurabilirsiniz."
       },
       "contact": {
         "title": "İletişim",
-        "body": "Gizlilik soruları: info@angelolens.com."
+        "body": "Gizlilik soruları: info.angelolens@gmail.com."
       }
     }
   },
@@ -224,7 +224,7 @@
       },
       "contact": {
         "title": "İletişim",
-        "body": "Şartlarla ilgili sorular: info@angelolens.com."
+        "body": "Şartlarla ilgili sorular: info.angelolens@gmail.com."
       }
     }
   },
@@ -315,7 +315,7 @@
       },
       "controller": {
         "title": "Veri sorumlusu",
-        "body": "Veri sorumlusu: Angelo Lens. İletişim: info@angelolens.com."
+        "body": "Veri sorumlusu: Angelo Lens. İletişim: info.angelolens@gmail.com."
       },
       "categories": {
         "title": "İşlenen kişisel veri kategorileri",
@@ -339,11 +339,11 @@
       },
       "rights": {
         "title": "KVKK m. 11 kapsamındaki haklarınız",
-        "body": "Kişisel verilerinizin işlenip işlenmediğini öğrenme; bilgi talep etme; amacını ve amaca uygun kullanılıp kullanılmadığını öğrenme; yurt içinde/yurt dışında aktarıldığı üçüncü kişileri bilme; düzeltme veya silme isteme; otomatik sistemler ile analiz sonucu aleyhinize bir sonucun ortaya çıkmasına itiraz etme; kanuna aykırı işleme nedeniyle zararın giderilmesini talep etme haklarına sahipsiniz. Başvuru: info@angelolens.com."
+        "body": "Kişisel verilerinizin işlenip işlenmediğini öğrenme; bilgi talep etme; amacını ve amaca uygun kullanılıp kullanılmadığını öğrenme; yurt içinde/yurt dışında aktarıldığı üçüncü kişileri bilme; düzeltme veya silme isteme; otomatik sistemler ile analiz sonucu aleyhinize bir sonucun ortaya çıkmasına itiraz etme; kanuna aykırı işleme nedeniyle zararın giderilmesini talep etme haklarına sahipsiniz. Başvuru: info.angelolens@gmail.com."
       },
       "application": {
         "title": "Başvuru yöntemi",
-        "body": "KVKK taleplerinizi info@angelolens.com adresine iletebilirsiniz. Kanun ve ilgili yönetmelikte öngörülen süreler içinde yanıtlanır."
+        "body": "KVKK taleplerinizi info.angelolens@gmail.com adresine iletebilirsiniz. Kanun ve ilgili yönetmelikte öngörülen süreler içinde yanıtlanır."
       }
     }
   },
@@ -369,7 +369,7 @@
       },
       "contact": {
         "title": "İletişim",
-        "body": "Sorularınız için: info@angelolens.com. Ayrıca Gizlilik Politikası ve KVKK Aydınlatma Metni’ne bakınız."
+        "body": "Sorularınız için: info.angelolens@gmail.com. Ayrıca Gizlilik Politikası ve KVKK Aydınlatma Metni’ne bakınız."
       }
     }
   }
