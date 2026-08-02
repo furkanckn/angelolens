@@ -5,7 +5,7 @@
     "ogTitle": "Angelo Lens",
     "ogDescription": "Una maison del colore — sensibilità del design italiano per lo sguardo.",
     "siteName": "Angelo Lens",
-    "keywords": "Angelo Lens, lenti a contatto colorate, lusso, Milano, design italiano"
+    "keywords": "Angelo Lens, lenti a contatto colorate, lenti di lusso, design italiano, lenti morbide, cura delle lenti, Milano"
   },
   "nav": {
     "home": "Home",
@@ -13,7 +13,8 @@
     "about": "La Nostra Storia",
     "opticians": "I Nostri Partner Ottici",
     "contact": "Contatti",
-    "instructions": "Istruzioni"
+    "instructions": "Istruzioni",
+    "journal": "Journal"
   },
   "cta": {
     "exploreCollection": "Esplora la Collezione",
@@ -238,7 +239,8 @@
     "cookies": "Cookie",
     "legal": "Legale",
     "explore": "Esplora",
-    "instructions": "Istruzioni d’uso"
+    "instructions": "Istruzioni d’uso",
+    "journal": "Journal"
   },
   "language": {
     "label": "Lingua"
@@ -501,5 +503,12 @@
         "items": []
       }
     }
+  },
+  "journalPage": {
+    "eyebrow": "Journal",
+    "title": "Note su colore e cura",
+    "intro": "Letture pratiche sulle lenti morbide colorate — scelta della tonalità, comfort e igiene quotidiana.",
+    "readArticle": "Leggi l'articolo",
+    "backToJournal": "Tutte le note del journal"
   }
 }

@@ -8,7 +8,7 @@ import {
   getCollection,
   type CollectionSlug,
 } from "@/lib/collections";
-import { SITE_URL } from "@/lib/site";
+import { pageMetadata } from "@/lib/seo";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
@@ -23,19 +23,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const collection = getCollection(slug);
   if (!collection) return {};
   const t = await getTranslations({ locale, namespace: "collections" });
-  const meta = await getTranslations({ locale, namespace: "meta" });
   const key = collection.slug;
-  return {
+  const meta = pageMetadata({
+    locale,
+    path: `/collections/${key}`,
     title: t(`${key}.name`),
     description: t(`${key}.description`),
+  });
+  return {
+    ...meta,
     openGraph: {
-      title: t(`${key}.name`),
-      description: t(`${key}.description`),
-      url: `${SITE_URL}/${locale}/collections/${key}`,
-      siteName: meta("siteName"),
-      locale,
-      type: "website",
-      images: [{ url: collection.shades[0]?.image ?? collection.detailImage, alt: t(`${key}.name`) }],
+      ...meta.openGraph,
+      images: [
+        {
+          url: collection.shades[0]?.image ?? collection.detailImage,
+          alt: t(`${key}.name`),
+        },
+      ],
     },
   };
 }

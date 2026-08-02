@@ -18,6 +18,7 @@ export function Footer() {
     ["/about", "about"],
     ["/opticians", "opticians"],
     ["/talimatlar", "instructions"],
+    ["/journal", "journal"],
     ["/contact", "contact"],
   ] as const;
 

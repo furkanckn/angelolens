@@ -4,7 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { COLLECTIONS, type CollectionSlug } from "@/lib/collections";
 import { CollectionCover } from "@/components/CollectionCover";
 import { PageShell } from "@/components/ui/Section";
-import { SITE_URL } from "@/lib/site";
+import { pageMetadata } from "@/lib/seo";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -20,19 +20,12 @@ const ACCENT: Record<CollectionSlug, string> = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "collections" });
-  const meta = await getTranslations({ locale, namespace: "meta" });
-  return {
+  return pageMetadata({
+    locale,
+    path: "/collections",
     title: t("title"),
     description: t("subtitle"),
-    openGraph: {
-      title: t("title"),
-      description: t("subtitle"),
-      url: `${SITE_URL}/${locale}/collections`,
-      siteName: meta("siteName"),
-      locale,
-      type: "website",
-    },
-  };
+  });
 }
 
 export default async function CollectionsPage({ params }: Props) {

@@ -10,10 +10,17 @@ import {
 } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { JsonLd } from "@/components/JsonLd";
 import { SkipToContent } from "@/components/SkipToContent";
 import { SiteImagesProvider } from "@/components/SiteImagesProvider";
 import { isRtlLocale, routing } from "@/i18n/routing";
 import { loadSiteImages } from "@/lib/cms-client";
+import {
+  languageAlternates,
+  localeUrl,
+  organizationJsonLd,
+  websiteJsonLd,
+} from "@/lib/seo";
 import { SITE_URL } from "@/lib/site";
 
 const display = Cormorant_Garamond({
@@ -60,10 +67,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
-
-  const languages = Object.fromEntries(
-    routing.locales.map((l) => [l, `${SITE_URL}/${l}`]),
-  );
+  const verification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
 
   return {
     metadataBase: new URL(SITE_URL),
@@ -73,17 +77,17 @@ export async function generateMetadata({
     },
     description: t("description"),
     keywords: t("keywords"),
+    authors: [{ name: t("siteName") }],
+    creator: t("siteName"),
+    publisher: t("siteName"),
     alternates: {
-      canonical: `${SITE_URL}/${locale}`,
-      languages: {
-        ...languages,
-        "x-default": `${SITE_URL}/en`,
-      },
+      canonical: localeUrl(locale),
+      languages: languageAlternates(),
     },
     openGraph: {
       type: "website",
       locale,
-      url: `${SITE_URL}/${locale}`,
+      url: localeUrl(locale),
       siteName: t("siteName"),
       title: t("ogTitle"),
       description: t("ogDescription"),
@@ -105,7 +109,17 @@ export async function generateMetadata({
     robots: {
       index: true,
       follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
+      },
     },
+    ...(verification
+      ? { verification: { google: verification } }
+      : {}),
   };
 }
 
@@ -128,6 +142,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       className={`${display.variable} ${body.variable} ${arabic.variable} ${persian.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-cream text-ink">
+        <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
         <NextIntlClientProvider messages={messages}>
           <SiteImagesProvider initial={siteImages}>
             <SkipToContent />

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { InstructionsDiagrams } from "@/components/InstructionsDiagrams";
 import { PageShell } from "@/components/ui/Section";
-import { SITE_URL } from "@/lib/site";
+import { pageMetadata } from "@/lib/seo";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -39,19 +39,12 @@ const DIAGRAM_KEYS = [
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "instructionsPage" });
-  const meta = await getTranslations({ locale, namespace: "meta" });
-  return {
+  return pageMetadata({
+    locale,
+    path: "/talimatlar",
     title: t("title"),
     description: t("intro"),
-    openGraph: {
-      title: t("title"),
-      description: t("intro"),
-      url: `${SITE_URL}/${locale}/talimatlar`,
-      siteName: meta("siteName"),
-      locale,
-      type: "website",
-    },
-  };
+  });
 }
 
 export default async function InstructionsPage({ params }: Props) {

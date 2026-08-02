@@ -5,7 +5,7 @@
     "ogTitle": "Angelo Lens",
     "ogDescription": "دار للون — حسّ تصميم إيطالي للنظرة.",
     "siteName": "Angelo Lens",
-    "keywords": "Angelo Lens, عدسات لاصقة ملونة, فخامة, ميلانو, تصميم إيطالي"
+    "keywords": "Angelo Lens, عدسات لاصقة ملونة, عدسات فاخرة, تصميم إيطالي, عدسات لينة, العناية بالعدسات, Milano"
   },
   "nav": {
     "home": "الرئيسية",
@@ -13,7 +13,8 @@
     "about": "قصتنا",
     "opticians": "شركاؤنا من البصريات",
     "contact": "تواصل",
-    "instructions": "التعليمات"
+    "instructions": "التعليمات",
+    "journal": "المجلة"
   },
   "cta": {
     "exploreCollection": "استكشف المجموعة",
@@ -238,7 +239,8 @@
     "cookies": "ملفات تعريف الارتباط",
     "legal": "قانوني",
     "explore": "استكشف",
-    "instructions": "تعليمات الاستخدام"
+    "instructions": "تعليمات الاستخدام",
+    "journal": "المجلة"
   },
   "language": {
     "label": "اللغة"
@@ -501,5 +503,12 @@
         "items": []
       }
     }
+  },
+  "journalPage": {
+    "eyebrow": "المجلة",
+    "title": "ملاحظات حول اللون والعناية",
+    "intro": "قراءات عملية عن العدسات اللينة الملونة — اختيار الدرجة والراحة والنظافة اليومية.",
+    "readArticle": "اقرأ المقال",
+    "backToJournal": "كل ملاحظات المجلة"
   }
 }

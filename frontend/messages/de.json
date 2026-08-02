@@ -5,7 +5,7 @@
     "ogTitle": "Angelo Lens",
     "ogDescription": "Ein Maison der Farbe — italienische Designsensibilität für den Blick.",
     "siteName": "Angelo Lens",
-    "keywords": "Angelo Lens, farbige Kontaktlinsen, Luxus, Milano, italienisches Design"
+    "keywords": "Angelo Lens, farbige Kontaktlinsen, luxuriöse Kontaktlinsen, italienisches Design, weiche Linsen, Linsenpflege, Milano"
   },
   "nav": {
     "home": "Start",
@@ -13,7 +13,8 @@
     "about": "Unsere Geschichte",
     "opticians": "Unsere Optikpartner",
     "contact": "Kontakt",
-    "instructions": "Anleitung"
+    "instructions": "Anleitung",
+    "journal": "Journal"
   },
   "cta": {
     "exploreCollection": "Kollektion entdecken",
@@ -238,7 +239,8 @@
     "cookies": "Cookie-Richtlinie",
     "legal": "Rechtliches",
     "explore": "Entdecken",
-    "instructions": "Gebrauchsanweisung"
+    "instructions": "Gebrauchsanweisung",
+    "journal": "Journal"
   },
   "language": {
     "label": "Sprache"
@@ -501,5 +503,12 @@
         "items": []
       }
     }
+  },
+  "journalPage": {
+    "eyebrow": "Journal",
+    "title": "Notizen zu Farbe und Pflege",
+    "intro": "Praktische Texte zu farbigen weichen Linsen — Farbwahl, Tragekomfort und Alltagshygiene.",
+    "readArticle": "Artikel lesen",
+    "backToJournal": "Alle Journal-Notizen"
   }
 }

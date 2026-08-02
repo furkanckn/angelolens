@@ -5,7 +5,7 @@
     "ogTitle": "Angelo Lens",
     "ogDescription": "A maison of colour — Italian design sensibility for the gaze.",
     "siteName": "Angelo Lens",
-    "keywords": "Angelo Lens, coloured contact lenses, luxury, Milano, Italian design"
+    "keywords": "Angelo Lens, coloured contact lenses, luxury contact lenses, Italian design, soft lenses, lens care, Milano"
   },
   "nav": {
     "home": "Home",
@@ -13,7 +13,8 @@
     "about": "Our Story",
     "opticians": "Our Optician Partners",
     "contact": "Contact",
-    "instructions": "Instructions"
+    "instructions": "Instructions",
+    "journal": "Journal"
   },
   "cta": {
     "exploreCollection": "Explore the Collection",
@@ -238,7 +239,8 @@
     "cookies": "Cookie Policy",
     "legal": "Legal",
     "explore": "Explore",
-    "instructions": "Instructions for Use"
+    "instructions": "Instructions for Use",
+    "journal": "Journal"
   },
   "language": {
     "label": "Language"
@@ -501,5 +503,12 @@
         "items": []
       }
     }
+  },
+  "journalPage": {
+    "eyebrow": "Journal",
+    "title": "Notes on colour and care",
+    "intro": "Practical reading on coloured soft lenses — shade choice, comfort, and everyday hygiene.",
+    "readArticle": "Read article",
+    "backToJournal": "All journal notes"
   }
 }

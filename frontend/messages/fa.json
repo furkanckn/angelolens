@@ -5,7 +5,7 @@
     "ogTitle": "Angelo Lens",
     "ogDescription": "Maison رنگ — حساسیت طراحی ایتالیایی برای نگاه.",
     "siteName": "Angelo Lens",
-    "keywords": "Angelo Lens, لنز تماسی رنگی, لوکس, میلان, طراحی ایتالیایی"
+    "keywords": "Angelo Lens, لنز تماسی رنگی, لنز لوکس, طراحی ایتالیایی, لنز نرم, مراقبت از لنز, Milano"
   },
   "nav": {
     "home": "خانه",
@@ -13,7 +13,8 @@
     "about": "داستان ما",
     "opticians": "شرکای بینایی‌سنجی ما",
     "contact": "تماس",
-    "instructions": "دستورالعمل"
+    "instructions": "دستورالعمل",
+    "journal": "ژورنال"
   },
   "cta": {
     "exploreCollection": "کشف مجموعه",
@@ -238,7 +239,8 @@
     "cookies": "کوکی‌ها",
     "legal": "حقوقی",
     "explore": "کاوش",
-    "instructions": "دستور استفاده"
+    "instructions": "دستور استفاده",
+    "journal": "ژورنال"
   },
   "language": {
     "label": "زبان"
@@ -501,5 +503,12 @@
         "items": []
       }
     }
+  },
+  "journalPage": {
+    "eyebrow": "ژورنال",
+    "title": "یادداشت‌هایی درباره رنگ و مراقبت",
+    "intro": "متن‌های کاربردی درباره لنزهای نرم رنگی — انتخاب ته رنگ، راحتی و بهداشت روزمره.",
+    "readArticle": "خواندن مطلب",
+    "backToJournal": "همه یادداشت‌های ژورنال"
   }
 }

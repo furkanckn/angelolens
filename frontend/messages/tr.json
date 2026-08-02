@@ -5,7 +5,7 @@
     "ogTitle": "Angelo Lens",
     "ogDescription": "Her bakışta farklı bir renk. İtalyan zarafetinden ilhamla.",
     "siteName": "Angelo Lens",
-    "keywords": "Angelo Lens, renkli kontakt lens, lüks lens, optik, İtalyan ilham"
+    "keywords": "Angelo Lens, renkli kontakt lens, lüks kontakt lens, İtalyan tasarım, yumuşak lens, lens bakımı, Milano"
   },
   "nav": {
     "home": "Ana Sayfa",
@@ -13,7 +13,8 @@
     "about": "Hikayemiz",
     "opticians": "Optik Bayilerimiz",
     "contact": "İletişim",
-    "instructions": "Talimatlar"
+    "instructions": "Talimatlar",
+    "journal": "Dergi"
   },
   "cta": {
     "exploreCollection": "Koleksiyonu İncele",
@@ -238,7 +239,8 @@
     "cookies": "Çerez Politikası",
     "legal": "Yasal",
     "explore": "Keşfet",
-    "instructions": "Kullanım Talimatı"
+    "instructions": "Kullanım Talimatı",
+    "journal": "Dergi"
   },
   "language": {
     "label": "Dil"
@@ -502,5 +504,12 @@
         "items": []
       }
     }
+  },
+  "journalPage": {
+    "eyebrow": "Dergi",
+    "title": "Renk ve bakım notları",
+    "intro": "Renkli yumuşak lensler üzerine pratik yazılar — ton seçimi, konfor ve günlük hijyen.",
+    "readArticle": "Yazıyı oku",
+    "backToJournal": "Tüm dergi notları"
   }
 }
