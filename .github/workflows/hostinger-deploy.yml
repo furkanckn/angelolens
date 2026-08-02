@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-  schedule:
-    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -16,7 +14,26 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  deploy-panel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure Hostinger SSH key
+        env:
+          HOSTINGER_SSH_KEY: ${{ secrets.HOSTINGER_SSH_KEY }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$HOSTINGER_SSH_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -p 65002 147.79.103.46 >> ~/.ssh/known_hosts
+
+      - name: Deploy Laravel panel
+        run: |
+          ssh -i ~/.ssh/id_ed25519 -p 65002 \
+            u833733733@147.79.103.46 \
+            '/bin/bash /home/u833733733/domains/angelolens.com/deploy-panel.sh'
+
   build-and-publish:
+    needs: deploy-panel
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -37,7 +54,7 @@ jobs:
         working-directory: frontend
         env:
           CI: "true"
-          CMS_URL: "https://deepskyblue-alpaca-819675.hostingersite.com/panel"
+          CMS_URL: "https://angelolens.com/panel"
         run: npm run build:hostinger
 
       - name: Publish static files to hostinger branch
@@ -58,3 +75,4 @@ jobs:
           git commit -m "Deploy $GITHUB_SHA"
           git remote add origin "https://x-access-token:${{ github.token }}@github.com/${GITHUB_REPOSITORY}.git"
           git push --force origin hostinger
+
