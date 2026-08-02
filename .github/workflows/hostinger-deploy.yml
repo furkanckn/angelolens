@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+  schedule:
+    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -35,11 +37,18 @@ jobs:
         working-directory: frontend
         env:
           CI: "true"
+          CMS_URL: "https://deepskyblue-alpaca-819675.hostingersite.com/panel"
         run: npm run build:hostinger
 
       - name: Publish static files to hostinger branch
         working-directory: frontend/public_html
         run: |
+          printf '%s\n' \
+            '<IfModule mod_rewrite.c>' \
+            '    RewriteEngine On' \
+            '    RewriteRule ^livewire(?:/.*)?$ panel/index.php [L,QSA]' \
+            '</IfModule>' > .htaccess
+          ln -s ../laravel_app/backend/public panel
           touch .nojekyll
           git init
           git config user.name "github-actions[bot]"
