@@ -52,6 +52,7 @@ export const CMS_SECTIONS = [
   { id: "aboutPage", label: "Hikayemiz sayfası" },
   { id: "opticiansPage", label: "Optik bayiler" },
   { id: "contactPage", label: "İletişim" },
+  { id: "instructionsPage", label: "Kullanım talimatı" },
   { id: "nav", label: "Navigasyon" },
   { id: "cta", label: "CTA butonları" },
   { id: "footer", label: "Footer" },

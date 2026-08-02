@@ -12,7 +12,8 @@
     "collections": "مجموعه‌ها",
     "about": "داستان ما",
     "opticians": "شرکای بینایی‌سنجی ما",
-    "contact": "تماس"
+    "contact": "تماس",
+    "instructions": "دستورالعمل"
   },
   "cta": {
     "exploreCollection": "کشف مجموعه",
@@ -236,7 +237,8 @@
     "kvkk": "اطلاعیه KVKK",
     "cookies": "کوکی‌ها",
     "legal": "حقوقی",
-    "explore": "کاوش"
+    "explore": "کاوش",
+    "instructions": "دستور استفاده"
   },
   "language": {
     "label": "زبان"
@@ -371,5 +373,136 @@
         "body": "Questions: info.angelolens@gmail.com. See also our Privacy Policy and KVKK Disclosure Notice."
       }
     }
+  },
+  "instructionsPage": {
+    "eyebrow": "از روی بسته‌بندی",
+    "title": "دستور استفاده",
+    "intro": "این صفحه دستورالعمل روی جعبه Angelo Lens و راهنمای کامل‌تر مراقبت از لنزهای نرم را ارائه می‌دهد.",
+    "packagingAlt": "Angelo Lens box panel with instructions and schematic drawings",
+    "packagingCaption": "Box panel: usage steps, warnings, and diagrams. See the detailed guide below for more.",
+    "packTitle": "دستورالعمل چاپ‌شده روی جعبه",
+    "pack": {
+      "insert": {
+        "title": "Inserting the Contact Lens",
+        "items": [
+          "Wash your hands before handling contact lenses.",
+          "Place the lens on the tip of your index finger, pull your lower eyelid down, and place the lens on the cornea.",
+          "Then blink gently."
+        ]
+      },
+      "remove": {
+        "title": "Removing the Contact Lens",
+        "items": [
+          "Wash your hands before removing contact lenses.",
+          "Looking up, slide the lens with your fingertip onto the white of the eye.",
+          "Gently pinch it with two fingers to remove it, then place it in a lens case filled with lens solution."
+        ]
+      },
+      "warnings": {
+        "title": "Important Warnings",
+        "items": [
+          "Do not wear your lenses longer than the period recommended by the manufacturer.",
+          "Remove your lenses before sleeping.",
+          "Contact lenses are personal; do not share them with others."
+        ]
+      },
+      "contents": {
+        "title": "Box Contents",
+        "items": [
+          "2 soft contact lenses placed in saline solution inside 2 blisters."
+        ]
+      },
+      "disinfect": {
+        "title": "Disinfection",
+        "items": [
+          "Always rinse the lens with lens solution before insertion and after wear.",
+          "After use, store lenses in a case filled with freshly changed solution.",
+          "If you do not wear your lenses often, renew the solution in the case after 7 days."
+        ]
+      },
+      "wash": {
+        "title": "Cleaning",
+        "items": [
+          "Place the lens in your palm.",
+          "Apply a few drops of lens solution.",
+          "Rub both sides of the lens with your fingertip.",
+          "Rinse the lens."
+        ]
+      }
+    },
+    "diagramsTitle": "Insertion and removal diagrams",
+    "diagramsCaption": "Full instructions are available at www.angelolens.com/talimatlar.",
+    "diagrams": {
+      "insert1": "Hold the lens on your fingertip",
+      "insert2": "Place it on the cornea",
+      "insert3": "Support the eyelid while placing",
+      "remove1": "Slide the lens to the white of the eye",
+      "remove2": "Gently pinch with two fingers",
+      "remove3": "Place in a solution-filled case"
+    },
+    "detailEyebrow": "راهنمای تفصیلی",
+    "detailTitle": "استفاده روزانه و مراقبت",
+    "detailIntro": "The notes below are an Angelo Lens summary of widely accepted soft-lens safety practices. Your package insert and eye-care professional always come first.",
+    "detail": {
+      "hygiene": {
+        "title": "Hands and workspace",
+        "items": [
+          "Wash your hands with soap and dry with a lint-free towel before touching lenses.",
+          "Work over a clean, flat surface; close the sink drain so a dropped lens is easier to find.",
+          "Keep fingernails from scratching the lens surface."
+        ]
+      },
+      "orientation": {
+        "title": "Orientation and inspection",
+        "items": [
+          "Before insertion, check for tears, debris, or damage; do not wear a doubtful lens.",
+          "Correct orientation looks like a smooth bowl. Flared edges usually mean the lens is inside out.",
+          "Use the same order every time (for example right lens first) to avoid mixing pairs."
+        ]
+      },
+      "solutions": {
+        "title": "Solution use",
+        "items": [
+          "Use only the care system recommended by your eye-care professional or product labeling.",
+          "Never use tap water, saliva, homemade saline, or refilled bottles of unknown origin.",
+          "Do not top off old solution; empty the case and refill with fresh solution each time.",
+          "Saline alone does not disinfect; use it for rinsing within a complete care regimen.",
+          "With hydrogen peroxide systems, wait until neutralization is complete before wearing."
+        ]
+      },
+      "case": {
+        "title": "Lens case hygiene",
+        "items": [
+          "After inserting lenses, empty the case, rinse with solution, and air-dry open.",
+          "Clean lids and wells regularly; discard cracked or worn cases.",
+          "Replace the case about every 1–3 months.",
+          "If lenses sit unused, renew the solution; follow the 7-day reminder on the box and the solution label."
+        ]
+      },
+      "daily": {
+        "title": "Daily habits",
+        "items": [
+          "Do not exceed the recommended wear schedule; remove lenses before sleep.",
+          "Avoid showering, swimming, or hot tubs while wearing lenses; water is not a lens disinfectant.",
+          "Insert lenses before makeup and remove them before makeup removal when possible.",
+          "Ask whether eye drops are lens-compatible; unsuitable drops can irritate.",
+          "Never share lenses; each pair belongs to one wearer only."
+        ]
+      },
+      "whenToStop": {
+        "title": "When to stop and seek help",
+        "items": [
+          "Remove lenses immediately if you have severe redness, pain, burning, light sensitivity, sudden blur, or discharge.",
+          "If symptoms do not settle quickly, contact an eye-care professional; infections can become serious.",
+          "Do not force a lens that feels wrong; remove it, clean and rinse, or replace it."
+        ]
+      },
+      "disclaimer": {
+        "title": "Important note",
+        "body": "This page is for general information and is not medical advice. Follow the product label, package insert, and guidance from a qualified optician or ophthalmologist. Obtain Angelo Lens products from authorized sellers.",
+        "items": []
+      }
+    },
+    "packageInsertNote": "Refer to enclosed package insert for more detailed information"
   }
 }

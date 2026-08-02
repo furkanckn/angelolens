@@ -79,7 +79,7 @@ type PageProps = {
 /** Top padding clears the fixed header on inner pages */
 export function PageShell({ children, className = "" }: PageProps) {
   return (
-    <div className={`bg-cream pt-24 pb-16 sm:pt-28 md:pt-32 md:pb-24 ${className}`}>
+    <div className={`bg-cream pt-32 pb-16 sm:pt-36 md:pt-40 md:pb-24 ${className}`}>
       <div className="mx-auto w-full max-w-6xl px-5 sm:px-6 md:px-10">
         {children}
       </div>

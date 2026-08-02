@@ -44,6 +44,7 @@ export function Header() {
     { href: "/collections", label: t("collections") },
     { href: "/about", label: t("about") },
     { href: "/opticians", label: t("opticians") },
+    { href: "/talimatlar", label: t("instructions") },
     { href: "/contact", label: t("contact") },
   ] as const;
 
@@ -53,6 +54,21 @@ export function Header() {
     ? "/images/brand/logo-white.png"
     : "/images/brand/logo-black.png";
 
+  const pillBase =
+    "box-border inline-flex h-8 min-h-8 max-h-8 items-center justify-center gap-1 rounded-full border px-3 text-[11px] leading-none font-medium tracking-[0.1em] uppercase transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold xl:px-3.5";
+
+  const pillIdle = onDark
+    ? "border-cream/20 text-cream/85 hover:border-cream/35 hover:bg-cream/10 hover:text-cream"
+    : "border-line-soft text-ink/70 hover:border-gold-deep/35 hover:bg-surface hover:text-ink";
+
+  const pillActive = onDark
+    ? "border-cream/35 bg-cream/10 text-gold-light"
+    : "border-gold-deep/35 bg-surface text-gold-deep";
+
+  const circleBtn = onDark
+    ? "border-cream/25 bg-cream/5 text-cream hover:bg-cream/10"
+    : "border-line-soft bg-cream text-ink hover:border-gold-deep/40";
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-[background-color,border-color,box-shadow] duration-500 ${
@@ -61,24 +77,45 @@ export function Header() {
           : "border-b border-transparent bg-transparent text-cream"
       }`}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-5 py-3 sm:px-6 md:px-10 md:py-3.5">
-        <Link
-          href="/"
-          className="relative block h-8 w-[148px] shrink-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold sm:h-9 sm:w-[168px]"
-          aria-label={a11y("brandHome")}
-        >
-          <Image
-            src={logoSrc}
-            alt={a11y("brandHome")}
-            fill
-            className="object-contain object-left"
-            sizes="168px"
-            priority
-          />
-        </Link>
+      <div className="relative mx-auto max-w-5xl px-5 py-3.5 sm:px-6 md:px-10 md:py-4">
+        <div className="relative flex h-12 items-center justify-between sm:h-14">
+          <div className="z-10 flex w-10 shrink-0 items-center justify-start">
+            <LanguageSwitcher onDark={onDark} circle />
+          </div>
+
+          <Link
+            href="/"
+            className="absolute left-1/2 top-1/2 z-0 block h-10 w-[160px] -translate-x-1/2 -translate-y-1/2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold sm:h-11 sm:w-[180px] md:h-12 md:w-[200px]"
+            aria-label={a11y("brandHome")}
+          >
+            <Image
+              src={logoSrc}
+              alt={a11y("brandHome")}
+              fill
+              className="object-contain object-center"
+              sizes="200px"
+              priority
+            />
+          </Link>
+
+          <div className="z-10 flex w-10 shrink-0 items-center justify-end">
+            <button
+              type="button"
+              className={`relative inline-flex h-10 w-10 items-center justify-center rounded-full border transition-colors lg:hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold ${circleBtn}`}
+              onClick={() => setOpen((v) => !v)}
+              aria-expanded={open}
+              aria-controls="mobile-nav"
+              aria-label={open ? a11y("closeMenu") : a11y("openMenu")}
+            >
+              <HamburgerIcon open={open} />
+            </button>
+            {/* Desktop: sağda aynı genişlikte boşluk — logo ortada kalsın */}
+            <span className="hidden h-10 w-10 lg:block" aria-hidden />
+          </div>
+        </div>
 
         <nav
-          className="hidden items-center gap-1 lg:flex"
+          className="mt-3 hidden flex-wrap items-center justify-center gap-1.5 lg:flex"
           aria-label={a11y("mainNav")}
         >
           {links.map((link) => {
@@ -90,15 +127,7 @@ export function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`rounded-full px-3.5 py-2 text-[12px] font-medium tracking-[0.1em] uppercase transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold ${
-                  onDark
-                    ? active
-                      ? "bg-cream/10 text-gold-light"
-                      : "text-cream/85 hover:bg-cream/10 hover:text-cream"
-                    : active
-                      ? "bg-surface text-gold-deep"
-                      : "text-ink/70 hover:bg-surface hover:text-ink"
-                }`}
+                className={`${pillBase} ${active ? pillActive : pillIdle}`}
                 aria-current={active ? "page" : undefined}
               >
                 {link.label}
@@ -106,28 +135,8 @@ export function Header() {
             );
           })}
         </nav>
-
-        <div className="flex items-center gap-2 sm:gap-3">
-          <LanguageSwitcher onDark={onDark} />
-
-          <button
-            type="button"
-            className={`relative inline-flex h-10 w-10 items-center justify-center rounded-full border transition-colors lg:hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold ${
-              onDark
-                ? "border-cream/25 bg-cream/5 text-cream hover:bg-cream/10"
-                : "border-line-soft bg-cream text-ink hover:border-gold-deep/40"
-            }`}
-            onClick={() => setOpen((v) => !v)}
-            aria-expanded={open}
-            aria-controls="mobile-nav"
-            aria-label={open ? a11y("closeMenu") : a11y("openMenu")}
-          >
-            <HamburgerIcon open={open} />
-          </button>
-        </div>
       </div>
 
-      {/* Mobile drawer */}
       <div
         id="mobile-nav"
         className={`lg:hidden overflow-hidden transition-[max-height,opacity] duration-300 ease-out ${

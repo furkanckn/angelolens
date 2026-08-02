@@ -12,7 +12,8 @@
     "collections": "Koleksiyonlar",
     "about": "Hikayemiz",
     "opticians": "Optik Bayilerimiz",
-    "contact": "İletişim"
+    "contact": "İletişim",
+    "instructions": "Talimatlar"
   },
   "cta": {
     "exploreCollection": "Koleksiyonu İncele",
@@ -236,7 +237,8 @@
     "kvkk": "KVKK Aydınlatma Metni",
     "cookies": "Çerez Politikası",
     "legal": "Yasal",
-    "explore": "Keşfet"
+    "explore": "Keşfet",
+    "instructions": "Kullanım Talimatı"
   },
   "language": {
     "label": "Dil"
@@ -372,5 +374,136 @@
         "body": "Sorularınız için: info.angelolens@gmail.com. Ayrıca Gizlilik Politikası ve KVKK Aydınlatma Metni’ne bakınız."
       }
     }
+  },
+  "instructionsPage": {
+    "eyebrow": "Ambalaj bilgisi",
+    "title": "Kullanım Talimatı",
+    "intro": "Aşağıda kutu üzerindeki kullanım talimatının yazıya dökülmüş hali yer alır. Altta daha ayrıntılı bakım rehberi bulunur.",
+    "packagingAlt": "Angelo Lens kutu paneli kullanım talimatı ve şematik görseller",
+    "packagingCaption": "Orijinal kutu paneli (referans görsel). Okunabilir metin yukarıdadır.",
+    "packTitle": "Kutu üzerindeki kullanım talimatı",
+    "pack": {
+      "insert": {
+        "title": "Kontakt Lensin Takılması",
+        "items": [
+          "Kontakt lensleri kullanmadan önce ellerinizi yıkayın.",
+          "Lensi işaret parmağınızın ucuna yerleştirin, alt göz kapağınızı aşağı çekin ve lensi gözünüzün kornea tabakasının üzerine yerleştirin.",
+          "Ardından hafifçe gözünüzü kırpın."
+        ]
+      },
+      "remove": {
+        "title": "Kontakt Lensin Çıkarılması",
+        "items": [
+          "Kontakt lensleri çıkarmadan önce ellerinizi yıkayın.",
+          "Yukarı bakarak lensi parmağınızın ucu ile gözün beyaz kısmına kaydırın.",
+          "Daha sonra iki parmağınızla hafifçe sıkıştırarak çıkarın ve lens solüsyonu ile dolu lens kabına yerleştirin."
+        ]
+      },
+      "warnings": {
+        "title": "Önemli Uyarılar",
+        "items": [
+          "Lenslerinizi, üretici tarafından önerilen süreden fazla kullanmayın.",
+          "Uyumadan önce lenslerinizi çıkarın.",
+          "Kontakt lensler kişiseldir, başkalarıyla paylaşmayın."
+        ]
+      },
+      "contents": {
+        "title": "Kutu İçeriği",
+        "items": [
+          "2 blister içinde salin solüsyonunda yerleştirilmiş 2 adet yumuşak kontakt lens."
+        ]
+      },
+      "disinfect": {
+        "title": "Dezenfekte",
+        "items": [
+          "Lensi gözünüze takmadan önce ve kullandıktan sonra mutlaka lens solüsyonu ile yıkayın.",
+          "Lenslerinizi kullanımdan sonra, yeni değiştirdiğiniz solüsyon ile dolu lens kabında saklayın.",
+          "Lenslerinizi sık kullanmıyorsanız, 7 gün sonra lens kabındaki solüsyonu yenileyin."
+        ]
+      },
+      "wash": {
+        "title": "Yıkama",
+        "items": [
+          "Lensi avucunuzun içine koyun.",
+          "Birkaç damla lens solüsyonu damlatın.",
+          "Parmağınızın ucu ile lensin her iki tarafını ovalayın.",
+          "Lensi durulayın."
+        ]
+      }
+    },
+    "diagramsTitle": "Takma ve çıkarma şeması",
+    "diagramsCaption": "Kapsamlı kullanım talimatlarına www.angelolens.com/talimatlar adresinden ulaşabilirsiniz.",
+    "diagrams": {
+      "insert1": "Lensi parmak ucuna alın",
+      "insert2": "Kornea üzerine yerleştirin",
+      "insert3": "Göz kapağını destekleyerek yerleştirin",
+      "remove1": "Lensi beyaz kısma kaydırın",
+      "remove2": "İki parmakla nazikçe sıkıştırın",
+      "remove3": "Solüsyonlu kaba yerleştirin"
+    },
+    "detailEyebrow": "Detaylı rehber",
+    "detailTitle": "Günlük kullanım ve bakım",
+    "detailIntro": "Aşağıdaki maddeler, yumuşak kontakt lens kullanımında yaygın kabul gören güvenlik ilkelerine dayanan Angelo Lens özetidir. Ambalaj eki ve göz sağlığı uzmanınızın önerisi her zaman önceliklidir.",
+    "detail": {
+      "hygiene": {
+        "title": "Eller ve çalışma alanı",
+        "items": [
+          "Lenslere dokunmadan önce ellerinizi sabunla yıkayıp tüy bırakmayan bir havluyla kurulayın.",
+          "Temiz, düz bir yüzeyde çalışın; lavabonun tıpasını kapatın ki lens düşerse kaybolmasın.",
+          "Tırnaklarınızın lens yüzeyini çizmemesine dikkat edin."
+        ]
+      },
+      "orientation": {
+        "title": "Lens yönü ve kontrol",
+        "items": [
+          "Takmadan önce lensin yırtık, kir veya hasar olup olmadığını kontrol edin; şüphedeyseniz kullanmayın.",
+          "Doğru yön: lens kenarı düzgün bir kase gibi görünür. Kenarlar dışa kıvrılıyorsa ters takılmış olabilir.",
+          "Sağ ve sol lensleri karıştırmamak için her seferinde aynı sırayla (örneğin önce sağ) ilerleyin."
+        ]
+      },
+      "solutions": {
+        "title": "Solüsyon kullanımı",
+        "items": [
+          "Yalnızca göz sağlığı uzmanınızın veya ürün etiketinin önerdiği lens bakım solüsyonunu kullanın.",
+          "Musluk suyu, tükürük, ev yapımı tuzlu su veya yeniden doldurulmuş solüsyon kullanmayın.",
+          "Eski solüsyonun üzerine yeni solüsyon eklemeyin; her saklamada kabı boşaltıp taze solüsyon koyun.",
+          "Salin tek başına dezenfekte etmez; durulama içindir. Dezenfeksiyon için uygun bakım sistemini izleyin.",
+          "Hidrojen peroksit sistemlerinde nötralizasyon süresi tamamlanmadan lensi göze takmayın."
+        ]
+      },
+      "case": {
+        "title": "Lens kabı hijyeni",
+        "items": [
+          "Lensleri taktıktan sonra kabı boşaltın, solüsyonla çalkalayın ve açık şekilde hava ile kurutun.",
+          "Kabın kapağını ve haznelerini düzenli temizleyin; aşınmış veya çatlak kabı kullanmayın.",
+          "Lens kabını yaklaşık her 1–3 ayda bir yenileyin.",
+          "Lensleri uzun süre kullanmayacaksanız solüsyonu yenileyin; kutudaki 7 günlük hatırlatmayı dikkate alın ve etiket talimatına uyun."
+        ]
+      },
+      "daily": {
+        "title": "Günlük alışkanlıklar",
+        "items": [
+          "Önerilen kullanım süresini aşmayın; uyumadan önce lensleri çıkarın.",
+          "Lens takılıyken duş, yüzme veya jakuziden kaçının; su lens bakımı yerine geçmez.",
+          "Makyaj varsa lensleri makyajdan önce takın, makyaj temizliği sırasında lensleri çıkarın.",
+          "Göz damlası kullanacaksanız lensle uyumlu olup olmadığını sorun; uygun olmayan damlalar tahriş edebilir.",
+          "Lensleri kimseyle paylaşmayın; her çift yalnızca bir kişiye aittir."
+        ]
+      },
+      "whenToStop": {
+        "title": "Ne zaman bırakmalı ve yardım istemeli?",
+        "items": [
+          "Şiddetli kızarıklık, ağrı, batma, ışığa hassasiyet, bulanık görme veya akıntı varsa lensleri hemen çıkarın.",
+          "Belirtiler kısa sürede düzelmezse göz sağlığı uzmanına başvurun; enfeksiyonlar ciddi sonuçlar doğurabilir.",
+          "Lens rahatsız hissediyorsa zorlamayın; çıkarın, temizleyip durulayın veya yenisiyle değiştirin."
+        ]
+      },
+      "disclaimer": {
+        "title": "Önemli not",
+        "body": "Bu sayfa genel bilgilendirme amaçlıdır ve tıbbi tavsiye yerine geçmez. Ürün etiketindeki bilgilere, ambalaj ekine ve yetkili optisyen / göz hekiminizin yönlendirmesine uyun. Angelo Lens ürünlerini yetkili satış noktalarından edinin.",
+        "items": []
+      }
+    },
+    "packageInsertNote": "Refer to enclosed package insert for more detailed information"
   }
 }

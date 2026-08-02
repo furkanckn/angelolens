@@ -9,11 +9,22 @@ import { LOCALE_META } from "@/lib/locales";
 type Props = {
   /** Visual tone when header sits on dark hero */
   onDark?: boolean;
-  /** Compact trigger for header; footer can use default */
+  /** Match header nav link size (flag + short code) */
+  compact?: boolean;
+  /** Circle control mirroring the hamburger (flag above, code below) */
+  circle?: boolean;
+  /** Override trigger classes (e.g. shared nav pill) */
+  triggerClassName?: string;
   className?: string;
 };
 
-export function LanguageSwitcher({ onDark = false, className = "" }: Props) {
+export function LanguageSwitcher({
+  onDark = false,
+  compact = false,
+  circle = false,
+  triggerClassName,
+  className = "",
+}: Props) {
   const t = useTranslations("a11y");
   const locale = useLocale() as Locale;
   const pathname = usePathname();
@@ -45,26 +56,72 @@ export function LanguageSwitcher({ onDark = false, className = "" }: Props) {
     router.replace(pathname, { locale: code });
   }
 
+  const circleClass = `relative inline-flex h-10 w-10 flex-col items-center justify-center gap-0.5 rounded-full border transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold ${
+    onDark
+      ? open
+        ? "border-cream/40 bg-cream/10 text-cream"
+        : "border-cream/25 bg-cream/5 text-cream hover:bg-cream/10"
+      : open
+        ? "border-gold-deep/40 bg-surface text-ink"
+        : "border-line-soft bg-cream text-ink hover:border-gold-deep/40"
+  }`;
+
+  const triggerClass =
+    triggerClassName ??
+    (circle
+      ? circleClass
+      : compact
+        ? `box-border inline-flex h-8 min-h-8 max-h-8 items-center justify-center gap-1 rounded-full border px-3 text-[11px] leading-none font-medium tracking-[0.1em] uppercase transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold ${
+            onDark
+              ? open
+                ? "border-cream/35 bg-cream/10 text-gold-light"
+                : "border-cream/20 text-cream/85 hover:border-cream/35 hover:bg-cream/10 hover:text-cream"
+              : open
+                ? "border-gold-deep/35 bg-surface text-gold-deep"
+                : "border-line-soft text-ink/70 hover:border-gold-deep/35 hover:bg-surface hover:text-ink"
+          }`
+        : `inline-flex min-h-10 items-center gap-2 rounded-full border px-3 py-1.5 text-xs font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold ${
+            onDark
+              ? "border-cream/25 bg-cream/5 text-cream hover:bg-cream/10"
+              : "border-line-soft bg-cream text-ink hover:border-gold-deep/40"
+          }`);
+
   return (
     <div ref={rootRef} className={`relative ${className}`}>
       <button
         type="button"
-        className={`inline-flex min-h-10 items-center gap-2 rounded-full border px-3 py-1.5 text-xs font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold ${
-          onDark
-            ? "border-cream/25 bg-cream/5 text-cream hover:bg-cream/10"
-            : "border-line-soft bg-cream text-ink hover:border-gold-deep/40"
-        }`}
+        className={triggerClass}
         aria-label={t("language")}
         aria-haspopup="listbox"
         aria-expanded={open}
         aria-controls={listId}
         onClick={() => setOpen((v) => !v)}
       >
-        <span className="text-base leading-none" aria-hidden>
-          {current.flag}
-        </span>
-        <span className="tracking-[0.08em]">{current.short}</span>
-        <Chevron open={open} />
+        {circle ? (
+          <>
+            <span className="text-[13px] leading-none" aria-hidden>
+              {current.flag}
+            </span>
+            <span className="text-[8px] font-medium leading-none tracking-[0.12em] uppercase">
+              {current.short}
+            </span>
+          </>
+        ) : compact ? (
+          <>
+            <span className="text-[11px] leading-none" aria-hidden>
+              {current.flag}
+            </span>
+            <span className="leading-none">{current.short}</span>
+          </>
+        ) : (
+          <>
+            <span className="text-base leading-none" aria-hidden>
+              {current.flag}
+            </span>
+            <span className="tracking-[0.08em]">{current.short}</span>
+            <Chevron open={open} />
+          </>
+        )}
       </button>
 
       {open && (
@@ -72,7 +129,9 @@ export function LanguageSwitcher({ onDark = false, className = "" }: Props) {
           id={listId}
           role="listbox"
           aria-label={t("language")}
-          className="absolute end-0 z-50 mt-2 min-w-[11.5rem] overflow-hidden rounded-xl border border-line-soft bg-cream py-1.5 text-ink shadow-[0_12px_40px_rgba(14,13,12,0.14)]"
+          className={`absolute z-50 mt-2 min-w-[11.5rem] overflow-hidden rounded-xl border border-line-soft bg-cream py-1.5 text-ink shadow-[0_12px_40px_rgba(14,13,12,0.14)] ${
+            circle || compact ? "start-0" : "end-0"
+          }`}
         >
           {locales.map((code) => {
             const meta = LOCALE_META[code];

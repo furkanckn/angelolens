@@ -7,8 +7,6 @@ import { LensCare } from "@/components/LensCare";
 import { PackagingShowcase } from "@/components/PackagingShowcase";
 import { LookCompare } from "@/components/LookCompare";
 import { StoryTeaser } from "@/components/StoryTeaser";
-import { InstagramStrip } from "@/components/InstagramStrip";
-
 type Props = {
   params: Promise<{ locale: string }>;
 };
@@ -27,7 +25,6 @@ export default async function HomePage({ params }: Props) {
       <StoryTeaser />
       <Craftsmanship />
       <LensCare />
-      <InstagramStrip />
     </>
   );
 }

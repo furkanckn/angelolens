@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { loadSiteImages } from "@/lib/cms-client";
 import { SITE_URL } from "@/lib/site";
 
 type Props = {
@@ -30,28 +28,15 @@ export default async function AboutPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("aboutPage");
-  const alts = await getTranslations("alts");
-  const images = await loadSiteImages();
-  const storySrc = images.story;
 
   return (
     <article className="bg-cream">
-      <div className="relative h-[42vh] min-h-[260px] bg-anthracite sm:h-[48vh]">
-        <Image
-          src={storySrc}
-          alt={alts("story")}
-          fill
-          unoptimized
-          className="object-cover object-[center_35%] opacity-80"
-          priority
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-anthracite via-anthracite/35 to-transparent" />
-        <div className="absolute inset-x-0 bottom-0 mx-auto max-w-3xl px-5 pb-10 sm:px-6 md:px-10 md:pb-12">
+      <div className="border-b border-line-soft bg-anthracite text-cream">
+        <div className="mx-auto max-w-3xl px-5 py-16 sm:px-6 sm:py-20 md:px-10 md:py-24">
           <p className="text-xs font-medium tracking-[0.16em] text-gold-light uppercase">
             {t("eyebrow")}
           </p>
-          <h1 className="font-display mt-3 text-3xl text-cream sm:text-4xl md:text-5xl">
+          <h1 className="font-display mt-3 text-3xl sm:text-4xl md:text-5xl">
             {t("title")}
           </h1>
         </div>
