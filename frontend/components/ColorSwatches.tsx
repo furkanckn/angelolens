@@ -33,13 +33,13 @@ export function ColorSwatches({ shades, label }: Props) {
               sizes="420px"
             />
           </div>
-          <p className="mt-4 text-center font-display text-lg text-ink sm:text-start">
+          <p className="mt-4 text-center font-display text-lg text-ink">
             {current.name}
           </p>
         </div>
       ) : null}
 
-      <div className="mt-5 flex flex-wrap justify-center gap-3 sm:justify-start">
+      <div className="mt-5 flex flex-wrap justify-center gap-3">
         {shades.map((shade) => {
           const isActive = active === shade.id;
           return (

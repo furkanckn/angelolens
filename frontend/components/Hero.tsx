@@ -24,9 +24,9 @@ export function Hero() {
           sizes="100vw"
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-anthracite/60 via-anthracite/50 to-anthracite" />
+      <div className="absolute inset-0 bg-gradient-to-b from-anthracite/55 via-anthracite/50 to-anthracite" />
 
-      <div className="relative mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-end px-5 pb-24 pt-36 sm:px-6 md:px-10 md:pb-28 md:pt-40">
+      <div className="relative mx-auto flex min-h-[100svh] max-w-6xl flex-col items-center justify-end px-5 pb-24 pt-36 text-center sm:px-6 md:px-10 md:pb-28 md:pt-40">
         <motion.p
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -40,7 +40,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.85, delay: 0.08 }}
-          className="font-display mt-5 max-w-3xl text-4xl leading-[1.12] text-cream sm:text-5xl md:text-6xl"
+          className="font-display mx-auto mt-5 max-w-3xl text-4xl leading-[1.12] text-cream sm:text-5xl md:text-6xl"
         >
           {t("title")}
         </motion.h1>
@@ -49,7 +49,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.85, delay: 0.18 }}
-          className="mt-5 max-w-xl text-base leading-relaxed text-cream/90 sm:text-lg"
+          className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-cream/90 sm:text-lg"
         >
           {t("subtitle")}
         </motion.p>
@@ -58,7 +58,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75, delay: 0.3 }}
-          className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap"
+          className="mt-9 flex w-full flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap"
         >
           <ButtonLink href="/collections" variant="primaryOnDark">
             {cta("exploreCollections")}

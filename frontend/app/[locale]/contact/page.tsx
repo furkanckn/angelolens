@@ -32,7 +32,7 @@ export default async function ContactPage({ params }: Props) {
 
   return (
     <PageShell>
-      <div className="max-w-xl">
+      <div className="mx-auto max-w-xl text-center">
         <p className="text-xs font-medium tracking-[0.16em] text-gold-deep uppercase">
           {t("eyebrow")}
         </p>

@@ -12,13 +12,15 @@ export async function LegalDocument({ namespace, keys }: Props) {
   return (
     <PageShell>
       <div className="mx-auto max-w-3xl">
-        <h1 className="font-display text-3xl text-ink sm:text-4xl md:text-5xl">
-          {t("title")}
-        </h1>
-        <p className="mt-3 text-xs tracking-[0.14em] text-muted uppercase">
-          {t("updated")}
-        </p>
-        <div className="mt-10 space-y-8">
+        <div className="text-center">
+          <h1 className="font-display text-3xl text-ink sm:text-4xl md:text-5xl">
+            {t("title")}
+          </h1>
+          <p className="mt-3 text-xs tracking-[0.14em] text-muted uppercase">
+            {t("updated")}
+          </p>
+        </div>
+        <div className="mt-10 space-y-8 text-start">
           {keys.map((key) => (
             <section key={key}>
               <h2 className="font-display text-xl text-ink sm:text-2xl">

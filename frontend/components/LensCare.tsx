@@ -56,7 +56,7 @@ export function LensCare() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-30px" }}
             transition={{ duration: 0.55, delay: index * 0.06 }}
-            className="flex gap-4 sm:gap-5"
+            className="flex flex-col items-center gap-4 text-center sm:gap-5"
           >
             <div
               className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-line text-gold-deep"
@@ -73,7 +73,7 @@ export function LensCare() {
                 {ICONS[key]}
               </svg>
             </div>
-            <div>
+            <div className="max-w-sm">
               <h3 className="font-display text-xl text-ink sm:text-[1.35rem]">
                 {t(`items.${key}.title`)}
               </h3>

@@ -37,7 +37,7 @@ export function Craftsmanship() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: index * 0.06 }}
-            className="rounded-sm border border-line-soft bg-surface/60 p-5 sm:p-6"
+            className="rounded-sm border border-line-soft bg-surface/60 p-5 text-center sm:p-6"
           >
             <svg
               width="26"
@@ -46,7 +46,7 @@ export function Craftsmanship() {
               fill="none"
               stroke="currentColor"
               strokeWidth="1.2"
-              className="text-gold-deep"
+              className="mx-auto text-gold-deep"
               aria-hidden
             >
               {ICONS[key]}
@@ -54,7 +54,7 @@ export function Craftsmanship() {
             <h3 className="font-display mt-4 text-lg text-ink sm:text-xl">
               {t(`items.${key}.title`)}
             </h3>
-            <p className="mt-2 text-sm leading-relaxed text-muted">
+            <p className="mx-auto mt-2 max-w-xs text-sm leading-relaxed text-muted">
               {t(`items.${key}.body`)}
             </p>
           </motion.div>

@@ -54,24 +54,24 @@ export default async function CollectionDetailPage({ params }: Props) {
   return (
     <article className="bg-cream">
       <header className="border-b border-line-soft bg-cream">
-        <div className="mx-auto max-w-7xl px-5 py-14 sm:px-6 md:px-10 md:py-20">
+        <div className="mx-auto max-w-6xl px-5 pt-32 pb-14 text-center sm:px-6 sm:pt-36 md:px-10 md:pt-40 md:pb-20">
           <p className="text-[11px] font-medium tracking-brand text-gold-deep uppercase">
             {t(`${key}.tagline`)}
           </p>
           <h1 className="font-display mt-4 text-4xl text-ink sm:text-5xl md:text-6xl">
             {t(`${key}.name`)}
           </h1>
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
+          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
             {t(`${key}.editorial`)}
           </p>
-          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted">
+          <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-muted">
             {t(`${key}.description`)}
           </p>
         </div>
       </header>
 
-      <section className="mx-auto max-w-7xl px-5 py-14 sm:px-6 md:px-10 md:py-20">
-        <p className="text-[11px] font-medium tracking-[0.16em] text-muted uppercase">
+      <section className="mx-auto max-w-6xl px-5 py-14 sm:px-6 md:px-10 md:py-20">
+        <p className="text-center text-[11px] font-medium tracking-[0.16em] text-muted uppercase">
           {t("shadesLabel")}
         </p>
 
@@ -89,7 +89,7 @@ export default async function CollectionDetailPage({ params }: Props) {
                   priority={shade.id === collection.shades[0]?.id}
                 />
               </div>
-              <figcaption className="mt-5 flex items-center gap-3">
+              <figcaption className="mt-5 flex items-center justify-center gap-3">
                 <span
                   className="h-2.5 w-2.5 shrink-0 rounded-full"
                   style={{ backgroundColor: shade.hex }}
@@ -103,7 +103,7 @@ export default async function CollectionDetailPage({ params }: Props) {
           ))}
         </div>
 
-        <div className="mt-14 max-w-xl border-t border-line-soft pt-10">
+        <div className="mx-auto mt-14 max-w-xl border-t border-line-soft pt-10 text-center">
           <p className="text-[11px] font-medium tracking-elegant text-muted uppercase">
             {t("suitsLabel")}
           </p>
@@ -112,7 +112,7 @@ export default async function CollectionDetailPage({ params }: Props) {
           </p>
           <Link
             href="/collections"
-            className="mt-8 inline-flex items-center gap-2 text-[11px] font-medium tracking-elegant text-gold-deep uppercase transition-colors hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold"
+            className="mt-8 inline-flex items-center justify-center gap-2 text-[11px] font-medium tracking-elegant text-gold-deep uppercase transition-colors hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold"
           >
             <span aria-hidden className="rtl:rotate-180">
               ←

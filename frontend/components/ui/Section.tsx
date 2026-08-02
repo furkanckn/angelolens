@@ -41,7 +41,7 @@ export function SectionIntro({
   className = "",
 }: IntroProps) {
   return (
-    <div className={`max-w-2xl ${className}`}>
+    <div className={`mx-auto max-w-2xl text-center ${className}`}>
       {eyebrow ? (
         <p
           className={`text-xs font-medium tracking-[0.16em] uppercase ${
@@ -60,7 +60,7 @@ export function SectionIntro({
       </h2>
       {subtitle ? (
         <p
-          className={`mt-4 text-base leading-relaxed sm:text-lg ${
+          className={`mx-auto mt-4 max-w-xl text-base leading-relaxed sm:text-lg ${
             dark ? "text-cream/90" : "text-muted"
           }`}
         >
@@ -79,7 +79,9 @@ type PageProps = {
 /** Top padding clears the fixed header on inner pages */
 export function PageShell({ children, className = "" }: PageProps) {
   return (
-    <div className={`bg-cream pt-32 pb-16 sm:pt-36 md:pt-40 md:pb-24 ${className}`}>
+    <div
+      className={`bg-cream pt-32 pb-16 sm:pt-36 md:pt-40 md:pb-24 ${className}`}
+    >
       <div className="mx-auto w-full max-w-6xl px-5 sm:px-6 md:px-10">
         {children}
       </div>

@@ -77,7 +77,7 @@ export function Header() {
           : "border-b border-transparent bg-transparent text-cream"
       }`}
     >
-      <div className="relative mx-auto max-w-5xl px-5 py-3.5 sm:px-6 md:px-10 md:py-4">
+      <div className="relative mx-auto max-w-6xl px-5 py-3.5 sm:px-6 md:px-10 md:py-4">
         <div className="relative flex h-12 items-center justify-between sm:h-14">
           <div className="z-10 flex w-10 shrink-0 items-center justify-start">
             <LanguageSwitcher onDark={onDark} circle />
@@ -109,7 +109,6 @@ export function Header() {
             >
               <HamburgerIcon open={open} />
             </button>
-            {/* Desktop: sağda aynı genişlikte boşluk — logo ortada kalsın */}
             <span className="hidden h-10 w-10 lg:block" aria-hidden />
           </div>
         </div>
@@ -148,7 +147,10 @@ export function Header() {
             solid ? "border-line-soft bg-cream" : "border-gold/15 bg-anthracite"
           }`}
         >
-          <nav className="flex flex-col gap-1" aria-label={a11y("mainNav")}>
+          <nav
+            className="flex flex-col items-stretch gap-1 text-center"
+            aria-label={a11y("mainNav")}
+          >
             {links.map((link) => {
               const active =
                 link.href === "/"

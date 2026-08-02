@@ -65,68 +65,60 @@ export default async function InstructionsPage({ params }: Props) {
 
   return (
     <PageShell>
-      <div className="mx-auto max-w-5xl">
-        <div className="mx-auto max-w-3xl text-center">
+      <div className="mx-auto max-w-3xl">
+        <div className="text-center">
           <p className="text-xs font-medium tracking-[0.16em] text-gold-deep uppercase">
             {t("eyebrow")}
           </p>
           <h1 className="font-display mt-3 text-3xl text-ink sm:text-4xl md:text-5xl">
             {t("title")}
           </h1>
-          <p className="mt-5 text-base leading-relaxed text-muted sm:text-lg">
-            {t("intro")}
+        </div>
+
+        <div className="mx-auto mt-14 max-w-2xl space-y-9">
+          {PACK_SECTIONS.map((key) => {
+            const items = t.raw(`pack.${key}.items`) as string[];
+            return (
+              <section key={key}>
+                <h3 className="font-display text-center text-xl text-ink sm:text-[1.35rem]">
+                  {t(`pack.${key}.title`)}
+                </h3>
+                <ul className="mt-3 list-disc space-y-2 ps-5 text-sm leading-relaxed text-muted sm:text-base">
+                  {items.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </section>
+            );
+          })}
+
+          <p className="border-s-2 border-gold/40 ps-4 text-sm leading-relaxed text-muted italic">
+            {t("packageInsertNote")}
           </p>
         </div>
 
-        {/* Ambalaj metni — görseldeki yazının okunaklı dökümü */}
-        <div className="mt-14 grid gap-12 lg:grid-cols-[1fr_minmax(0,20rem)] lg:items-start lg:gap-14">
-          <div className="space-y-9">
-            <h2 className="font-display text-2xl text-ink sm:text-3xl">
-              {t("packTitle")}
-            </h2>
-
-            {PACK_SECTIONS.map((key) => {
-              const items = t.raw(`pack.${key}.items`) as string[];
-              return (
-                <section key={key}>
-                  <h3 className="font-display text-xl text-ink sm:text-[1.35rem]">
-                    {t(`pack.${key}.title`)}
-                  </h3>
-                  <ul className="mt-3 list-disc space-y-2 ps-5 text-sm leading-relaxed text-muted sm:text-base">
-                    {items.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </section>
-              );
-            })}
-
-            <p className="border-s-2 border-gold/40 ps-4 text-sm leading-relaxed text-muted italic">
-              {t("packageInsertNote")}
-            </p>
+        <div className="mt-14 text-center">
+          <h2 className="font-display text-2xl text-ink sm:text-3xl">
+            {t("diagramsTitle")}
+          </h2>
+          <div className="mt-6">
+            <InstructionsDiagrams
+              labels={diagramLabels}
+              caption={t("diagramsCaption")}
+            />
           </div>
-
-          <aside className="lg:sticky lg:top-36">
-            <h2 className="font-display text-xl text-ink sm:text-2xl">
-              {t("diagramsTitle")}
-            </h2>
-            <div className="mt-5">
-              <InstructionsDiagrams
-                labels={diagramLabels}
-                caption={t("diagramsCaption")}
-              />
-            </div>
-          </aside>
         </div>
 
-        <div className="mx-auto mt-16 max-w-3xl border-t border-line-soft pt-14">
-          <p className="text-xs font-medium tracking-[0.16em] text-gold-deep uppercase">
+        <div className="mx-auto mt-16 max-w-2xl border-t border-line-soft pt-14">
+          <p className="text-center text-xs font-medium tracking-[0.16em] text-gold-deep uppercase">
             {t("detailEyebrow")}
           </p>
-          <h2 className="font-display mt-3 text-2xl text-ink sm:text-3xl">
+          <h2 className="font-display mt-3 text-center text-2xl text-ink sm:text-3xl">
             {t("detailTitle")}
           </h2>
-          <p className="mt-4 text-base leading-relaxed text-muted">{t("detailIntro")}</p>
+          <p className="mt-4 text-center text-base leading-relaxed text-muted">
+            {t("detailIntro")}
+          </p>
 
           <div className="mt-10 space-y-9">
             {DETAIL_SECTIONS.map((key) => {
@@ -135,7 +127,7 @@ export default async function InstructionsPage({ params }: Props) {
                 key === "disclaimer" ? t("detail.disclaimer.body") : null;
               return (
                 <section key={key}>
-                  <h3 className="font-display text-xl text-ink sm:text-[1.35rem]">
+                  <h3 className="font-display text-center text-xl text-ink sm:text-[1.35rem]">
                     {t(`detail.${key}.title`)}
                   </h3>
                   {body ? (
