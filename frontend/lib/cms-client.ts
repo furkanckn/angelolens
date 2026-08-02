@@ -53,7 +53,10 @@ export async function loadMessages(locale: Locale): Promise<Record<string, unkno
 
   try {
     const res = await fetch(`${CMS_URL}/api/v1/messages/${locale}`, {
-      next: { revalidate: 30 },
+      // Static Hostinger export cannot use ISR revalidate
+      ...(process.env.HOSTINGER_EXPORT === "1"
+        ? { cache: "force-cache" as const }
+        : { next: { revalidate: 30 } }),
     });
     if (!res.ok) return local;
     const json = (await res.json()) as { messages?: Record<string, unknown> };
@@ -89,7 +92,9 @@ export async function loadSiteImages(): Promise<SiteImages> {
 
   try {
     const res = await fetch(`${CMS_URL}/api/v1/images`, {
-      next: { revalidate: 30 },
+      ...(process.env.HOSTINGER_EXPORT === "1"
+        ? { cache: "force-cache" as const }
+        : { next: { revalidate: 30 } }),
     });
     if (!res.ok) return local;
     const json = (await res.json()) as Partial<Record<string, string>>;

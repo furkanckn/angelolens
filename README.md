@@ -48,3 +48,19 @@ Details: [backend/README.md](backend/README.md) · [frontend](frontend/)
 2. **Root Directory** = `frontend`
 3. Framework: Next.js
 4. Env: `CMS_URL` / `NEXT_PUBLIC_CMS_URL` = your Laravel API URL
+
+## Hostinger (static `public_html`)
+
+Shared hosting needs plain HTML (not a Node server):
+
+```bash
+cd frontend
+npm run build:hostinger
+```
+
+This writes static files to `frontend/public_html/` (includes `index.html`).  
+Upload **the contents** of that folder into Hostinger’s `public_html`.
+
+Notes:
+- Geo/locale middleware is disabled for this export (language URLs like `/tr/` still work)
+- CMS panel stays on Laravel (`api` / VPS); site can still read CMS if `NEXT_PUBLIC_CMS_URL` is set at build time

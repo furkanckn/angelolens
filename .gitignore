@@ -9,6 +9,8 @@ backend/node_modules/
 # next.js
 frontend/.next/
 frontend/out/
+frontend/public_html/
+frontend/middleware.ts.hostingerbak
 
 # misc
 .DS_Store

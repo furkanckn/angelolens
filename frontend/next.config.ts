@@ -3,6 +3,9 @@ import createNextIntlPlugin from "next-intl/plugin";
 
 const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
 
+/** Hostinger shared hosting → static HTML into public_html */
+const isHostinger = process.env.HOSTINGER_EXPORT === "1";
+
 const cmsHost = (() => {
   try {
     const raw =
@@ -15,17 +18,30 @@ const cmsHost = (() => {
   }
 })();
 
-const nextConfig: NextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: cmsHost.protocol.replace(":", "") as "http" | "https",
-        hostname: cmsHost.hostname,
-        port: cmsHost.port || undefined,
-        pathname: "/storage/**",
-      },
-    ],
+const remotePatterns: NonNullable<NextConfig["images"]>["remotePatterns"] = [
+  {
+    protocol: cmsHost.protocol.replace(":", "") as "http" | "https",
+    hostname: cmsHost.hostname,
+    port: cmsHost.port || undefined,
+    pathname: "/storage/**",
   },
+];
+
+const nextConfig: NextConfig = {
+  ...(isHostinger
+    ? {
+        output: "export" as const,
+        trailingSlash: true,
+        images: {
+          unoptimized: true,
+          remotePatterns,
+        },
+      }
+    : {
+        images: {
+          remotePatterns,
+        },
+      }),
 };
 
 export default withNextIntl(nextConfig);
