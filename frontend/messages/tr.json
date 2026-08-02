@@ -431,7 +431,6 @@
       }
     },
     "diagramsTitle": "Takma ve çıkarma şeması",
-    "diagramsCaption": "Kapsamlı kullanım talimatlarına www.angelolens.com/talimatlar adresinden ulaşabilirsiniz.",
     "diagrams": {
       "insert1": "Lensi parmak ucuna alın",
       "insert2": "Kornea üzerine yerleştirin",
@@ -502,7 +501,6 @@
         "body": "Bu sayfa genel bilgilendirme amaçlıdır ve tıbbi tavsiye yerine geçmez. Ürün etiketindeki bilgilere, ambalaj ekine ve yetkili optisyen / göz hekiminizin yönlendirmesine uyun. Angelo Lens ürünlerini yetkili satış noktalarından edinin.",
         "items": []
       }
-    },
-    "packageInsertNote": "Refer to enclosed package insert for more detailed information"
+    }
   }
 }

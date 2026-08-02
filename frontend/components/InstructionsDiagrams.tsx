@@ -124,28 +124,24 @@ function Diagram({ id }: { id: (typeof STEPS)[number] }) {
 
 type Props = {
   labels: Record<(typeof STEPS)[number], string>;
-  caption: string;
 };
 
-export function InstructionsDiagrams({ labels, caption }: Props) {
+export function InstructionsDiagrams({ labels }: Props) {
   return (
-    <div>
-      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-5">
-        {STEPS.map((id) => (
-          <figure
-            key={id}
-            className="flex flex-col items-center rounded-sm border border-line-soft bg-surface px-3 py-4"
-          >
-            <div className="h-24 w-full text-ink sm:h-28">
-              <Diagram id={id} />
-            </div>
-            <figcaption className="mt-2 text-center text-[11px] leading-snug text-muted">
-              {labels[id]}
-            </figcaption>
-          </figure>
-        ))}
-      </div>
-      <p className="mt-5 text-sm leading-relaxed text-muted">{caption}</p>
+    <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-5">
+      {STEPS.map((id) => (
+        <figure
+          key={id}
+          className="flex flex-col items-center rounded-sm border border-line-soft bg-surface px-3 py-4"
+        >
+          <div className="h-24 w-full text-ink sm:h-28">
+            <Diagram id={id} />
+          </div>
+          <figcaption className="mt-2 text-center text-[11px] leading-snug text-muted">
+            {labels[id]}
+          </figcaption>
+        </figure>
+      ))}
     </div>
   );
 }

@@ -430,7 +430,6 @@
       }
     },
     "diagramsTitle": "Insertion and removal diagrams",
-    "diagramsCaption": "Full instructions are available at www.angelolens.com/talimatlar.",
     "diagrams": {
       "insert1": "Hold the lens on your fingertip",
       "insert2": "Place it on the cornea",
@@ -501,7 +500,6 @@
         "body": "This page is for general information and is not medical advice. Follow the product label, package insert, and guidance from a qualified optician or ophthalmologist. Obtain Angelo Lens products from authorized sellers.",
         "items": []
       }
-    },
-    "packageInsertNote": "Refer to enclosed package insert for more detailed information"
+    }
   }
 }

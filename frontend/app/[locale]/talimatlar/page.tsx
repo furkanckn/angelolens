@@ -91,10 +91,6 @@ export default async function InstructionsPage({ params }: Props) {
               </section>
             );
           })}
-
-          <p className="border-s-2 border-gold/40 ps-4 text-sm leading-relaxed text-muted italic">
-            {t("packageInsertNote")}
-          </p>
         </div>
 
         <div className="mt-14 text-center">
@@ -102,10 +98,7 @@ export default async function InstructionsPage({ params }: Props) {
             {t("diagramsTitle")}
           </h2>
           <div className="mt-6">
-            <InstructionsDiagrams
-              labels={diagramLabels}
-              caption={t("diagramsCaption")}
-            />
+            <InstructionsDiagrams labels={diagramLabels} />
           </div>
         </div>
 
