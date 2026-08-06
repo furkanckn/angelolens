@@ -14,7 +14,8 @@
     "opticians": "Unsere Optikpartner",
     "contact": "Kontakt",
     "instructions": "Anleitung",
-    "journal": "Journal"
+    "journal": "Journal",
+    "fair": "Messe"
   },
   "cta": {
     "exploreCollection": "Kollektion entdecken",
@@ -240,7 +241,8 @@
     "legal": "Rechtliches",
     "explore": "Entdecken",
     "instructions": "Gebrauchsanweisung",
-    "journal": "Journal"
+    "journal": "Journal",
+    "fair": "Messe"
   },
   "language": {
     "label": "Sprache"
@@ -510,5 +512,12 @@
     "intro": "Praktische Texte zu farbigen weichen Linsen — Farbwahl, Tragekomfort und Alltagshygiene.",
     "readArticle": "Artikel lesen",
     "backToJournal": "Alle Journal-Notizen"
+  },
+  "fairPage": {
+    "eyebrow": "Events",
+    "title": "Messe",
+    "intro": "Wo Angelo Lens der Branche begegnet — Messen, Präsentationen und Markenmomente.",
+    "comingSoonTitle": "Sehr bald",
+    "comingSoonBody": "Messetermine, Orte und Besuchsinformationen werden vorbereitet. Schauen Sie bald wieder vorbei oder schreiben Sie uns für frühe Infos."
   }
 }

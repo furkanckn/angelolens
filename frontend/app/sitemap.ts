@@ -12,6 +12,7 @@ const STATIC_PATHS = [
   "/collections",
   "/contact",
   "/opticians",
+  "/fuar",
   "/talimatlar",
   "/journal",
   "/privacy",
