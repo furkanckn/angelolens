@@ -14,12 +14,11 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  test:
-    name: Lint and build
+  # Static site must publish even if Laravel SSH fails —
+  # Hostinger Git only updates when the `hostinger` branch moves.
+  build-and-publish:
+    name: Publish static site
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: frontend
     steps:
       - name: Check out repository
         uses: actions/checkout@v5
@@ -32,65 +31,20 @@ jobs:
           cache-dependency-path: frontend/package-lock.json
 
       - name: Install dependencies
+        working-directory: frontend
         run: npm ci
 
       - name: Lint
-        run: npm run lint
-
-      - name: Build
-        run: npm run build
-        env:
-          CI: "true"
-          NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://angelolens.com' }}
-          CMS_URL: "https://angelolens.com/panel"
-          NEXT_PUBLIC_CMS_URL: "https://angelolens.com/panel"
-
-  deploy-panel:
-    name: Deploy Laravel panel
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - name: Configure Hostinger SSH key
-        env:
-          HOSTINGER_SSH_KEY: ${{ secrets.HOSTINGER_SSH_KEY }}
-        run: |
-          install -m 700 -d ~/.ssh
-          printf '%s\n' "$HOSTINGER_SSH_KEY" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
-          ssh-keyscan -p 65002 147.79.103.46 >> ~/.ssh/known_hosts
-
-      - name: Deploy Laravel panel
-        run: |
-          ssh -i ~/.ssh/id_ed25519 -p 65002 \
-            u833733733@147.79.103.46 \
-            '/bin/bash /home/u833733733/domains/angelolens.com/deploy-panel.sh'
-
-  build-and-publish:
-    name: Publish static site
-    needs: deploy-panel
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v5
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v5
-        with:
-          node-version: "24"
-          cache: npm
-          cache-dependency-path: frontend/package-lock.json
-
-      - name: Install dependencies
         working-directory: frontend
-        run: npm ci
+        run: npm run lint
 
       - name: Build Hostinger static export
         working-directory: frontend
         env:
           CI: "true"
-          NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://angelolens.com' }}
-          CMS_URL: "https://angelolens.com/panel"
-          NEXT_PUBLIC_CMS_URL: "https://angelolens.com/panel"
+          NEXT_PUBLIC_SITE_URL: https://angelolens.com
+          CMS_URL: https://angelolens.com/panel
+          NEXT_PUBLIC_CMS_URL: https://angelolens.com/panel
         run: npm run build:hostinger
 
       - name: Publish static files to hostinger branch
@@ -101,7 +55,7 @@ jobs:
             '    RewriteEngine On' \
             '    RewriteRule ^livewire(?:/.*)?$ panel/index.php [L,QSA]' \
             '</IfModule>' > .htaccess
-          ln -s ../laravel_app/backend/public panel
+          ln -sfn ../laravel_app/backend/public panel
           touch .nojekyll
           git init
           git config user.name "github-actions[bot]"
@@ -111,3 +65,29 @@ jobs:
           git commit -m "Deploy $GITHUB_SHA"
           git remote add origin "https://x-access-token:${{ github.token }}@github.com/${GITHUB_REPOSITORY}.git"
           git push --force origin hostinger
+
+  deploy-panel:
+    name: Deploy Laravel panel
+    runs-on: ubuntu-latest
+    # Do not block the static site if SSH is down
+    continue-on-error: true
+    steps:
+      - name: Configure Hostinger SSH key
+        env:
+          HOSTINGER_SSH_KEY: ${{ secrets.HOSTINGER_SSH_KEY }}
+        run: |
+          if [ -z "$HOSTINGER_SSH_KEY" ]; then
+            echo "HOSTINGER_SSH_KEY secret is missing"
+            exit 1
+          fi
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$HOSTINGER_SSH_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -T 10 -p 65002 147.79.103.46 >> ~/.ssh/known_hosts
+
+      - name: Deploy Laravel panel
+        timeout-minutes: 3
+        run: |
+          ssh -o ConnectTimeout=15 -o BatchMode=yes -i ~/.ssh/id_ed25519 -p 65002 \
+            u833733733@147.79.103.46 \
+            '/bin/bash /home/u833733733/domains/angelolens.com/deploy-panel.sh'
