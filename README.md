@@ -49,43 +49,32 @@ Details: [backend/README.md](backend/README.md) · [frontend](frontend/)
 3. Framework: Next.js
 4. Env: `CMS_URL` / `NEXT_PUBLIC_CMS_URL` = your Laravel API URL
 
-## Hostinger (static `public_html`)
+## Hostinger deploy (automatic)
 
-Shared hosting needs plain HTML (not a Node server).
+Flow: **Cursor → `git push` `main` → GitHub Actions (lint + build) → Hostinger**
 
-### Automatic (recommended)
+| Workflow | When | What |
+|----------|------|------|
+| **CI** | PR + `main` | `npm run lint` + `npm run build` |
+| **Hostinger Deploy** | `main` push or manual | Lint/build → SSH Laravel panel → static export → force-push `hostinger` branch |
 
-Push to `main` (or run **Actions → CI and Hostinger Deploy → Run workflow**):
+Hostinger Git deployment pulls the `hostinger` branch into site `public_html`.
 
-1. GitHub Actions lints and builds the site
-2. Builds the Hostinger static export
-3. Uploads `frontend/public_html/` to Hostinger over FTPS
+**Required secret:** `HOSTINGER_SSH_KEY` (GitHub → Settings → Secrets → Actions)
 
-**GitHub → Settings → Secrets and variables → Actions**
+Optional variable: `NEXT_PUBLIC_SITE_URL` = `https://angelolens.com`
 
-| Name | Type | Example |
-|------|------|---------|
-| `FTP_SERVER` | Secret | `ftp.angelolens.com` or Hostinger FTP hostname |
-| `FTP_USERNAME` | Secret | Hostinger FTP user |
-| `FTP_PASSWORD` | Secret | Hostinger FTP password |
-| `NEXT_PUBLIC_CMS_URL` | Secret (optional) | Live Laravel API URL baked into the static build |
-| `NEXT_PUBLIC_SITE_URL` | Variable (optional) | `https://angelolens.com` |
+Manual run: **Actions → Hostinger Deploy → Run workflow**
 
-Remote path is `public_html/` (edit `.github/workflows/ci-hostinger.yml` if your Hostinger path differs).
-
-FTP details: Hostinger hPanel → **Files** → **FTP Accounts**.
-
-### Manual
+### Manual static build (local)
 
 ```bash
 cd frontend
 npm run build:hostinger
 ```
 
-This writes static files to `frontend/public_html/` (includes `index.html`).  
-Upload **the contents** of that folder into Hostinger’s `public_html`.
+Writes `frontend/public_html/`. Use only if you are not relying on Actions.
 
 Notes:
 - Geo/locale middleware is disabled for this export (language URLs like `/tr/` still work)
-- CMS panel stays on Laravel (`api` / VPS); site can still read CMS if `NEXT_PUBLIC_CMS_URL` is set at build time
-- Laravel/`backend` is **not** deployed by this workflow — only the static site
+- CMS lives under `/panel` on Hostinger; static builds use `CMS_URL=https://angelolens.com/panel`
