@@ -52,6 +52,13 @@ export function LanguageSwitcher({
 
   function select(code: Locale) {
     setOpen(false);
+
+    // Static Hostinger exports have no middleware response to persist this.
+    // Remember the visitor's explicit choice for the next visit to `/`.
+    const secure = window.location.protocol === "https:" ? "; Secure" : "";
+    document.cookie =
+      `NEXT_LOCALE=${code}; Max-Age=31536000; Path=/; SameSite=Lax${secure}`;
+
     if (code === locale) return;
     router.replace(pathname, { locale: code });
   }
