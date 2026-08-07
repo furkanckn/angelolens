@@ -149,7 +149,8 @@ if (!fs.existsSync(outDir)) {
 }
 
 fs.rmSync(publicHtml, { recursive: true, force: true });
-fs.cpSync(outDir, publicHtml, { recursive: true });\nfs.writeFileSync(path.join(publicHtml, "index.html"), hostingerLocaleIndex, "utf8");
+fs.cpSync(outDir, publicHtml, { recursive: true });
+fs.writeFileSync(path.join(publicHtml, "index.html"), hostingerLocaleIndex, "utf8");
 
 // Root index now performs saved-locale / IP-country / browser-language detection.
 console.log("");
