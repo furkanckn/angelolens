@@ -17,6 +17,7 @@ export function Footer() {
     ["/collections", "collections"],
     ["/about", "about"],
     ["/opticians", "opticians"],
+    ["/deneme-1", "deneme1"],
     ["/talimatlar", "instructions"],
     ["/journal", "journal"],
     ["/contact", "contact"],

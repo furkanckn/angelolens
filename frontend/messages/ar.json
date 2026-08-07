@@ -14,7 +14,8 @@
     "opticians": "شركاؤنا من البصريات",
     "contact": "تواصل",
     "instructions": "التعليمات",
-    "journal": "المجلة"
+    "journal": "المجلة",
+    "deneme1": "Deneme 1"
   },
   "cta": {
     "exploreCollection": "استكشف المجموعة",
@@ -240,7 +241,8 @@
     "legal": "قانوني",
     "explore": "استكشف",
     "instructions": "تعليمات الاستخدام",
-    "journal": "المجلة"
+    "journal": "المجلة",
+    "deneme1": "Deneme 1"
   },
   "language": {
     "label": "اللغة"
@@ -515,5 +517,10 @@
     "eyebrow": "اختبار",
     "title": "Deneme",
     "intro": "هذه صفحة تجريبية مؤقتة."
+  },
+  "deneme1Page": {
+    "eyebrow": "اختبار",
+    "title": "Deneme 1",
+    "intro": "هذه صفحة تجريبية مؤقتة Deneme 1."
   }
 }

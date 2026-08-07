@@ -14,7 +14,8 @@
     "opticians": "Our Optician Partners",
     "contact": "Contact",
     "instructions": "Instructions",
-    "journal": "Journal"
+    "journal": "Journal",
+    "deneme1": "Deneme 1"
   },
   "cta": {
     "exploreCollection": "Explore the Collection",
@@ -240,7 +241,8 @@
     "legal": "Legal",
     "explore": "Explore",
     "instructions": "Instructions for Use",
-    "journal": "Journal"
+    "journal": "Journal",
+    "deneme1": "Deneme 1"
   },
   "language": {
     "label": "Language"
@@ -515,5 +517,10 @@
     "eyebrow": "Test",
     "title": "Deneme",
     "intro": "This is a temporary test page."
+  },
+  "deneme1Page": {
+    "eyebrow": "Test",
+    "title": "Deneme 1",
+    "intro": "This is temporary test page Deneme 1."
   }
 }

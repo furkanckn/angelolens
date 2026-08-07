@@ -13,6 +13,7 @@ const STATIC_PATHS = [
   "/contact",
   "/opticians",
   "/deneme",
+  "/deneme-1",
   "/talimatlar",
   "/journal",
   "/privacy",

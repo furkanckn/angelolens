@@ -14,7 +14,8 @@
     "opticians": "شرکای بینایی‌سنجی ما",
     "contact": "تماس",
     "instructions": "دستورالعمل",
-    "journal": "ژورنال"
+    "journal": "ژورنال",
+    "deneme1": "Deneme 1"
   },
   "cta": {
     "exploreCollection": "کشف مجموعه",
@@ -240,7 +241,8 @@
     "legal": "حقوقی",
     "explore": "کاوش",
     "instructions": "دستور استفاده",
-    "journal": "ژورنال"
+    "journal": "ژورنال",
+    "deneme1": "Deneme 1"
   },
   "language": {
     "label": "زبان"
@@ -515,5 +517,10 @@
     "eyebrow": "تست",
     "title": "Deneme",
     "intro": "این یک صفحه آزمایشی موقت است."
+  },
+  "deneme1Page": {
+    "eyebrow": "تست",
+    "title": "Deneme 1",
+    "intro": "این صفحه آزمایشی موقت Deneme 1 است."
   }
 }

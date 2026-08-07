@@ -14,7 +14,8 @@
     "opticians": "Optik Bayilerimiz",
     "contact": "İletişim",
     "instructions": "Talimatlar",
-    "journal": "Dergi"
+    "journal": "Dergi",
+    "deneme1": "Deneme 1"
   },
   "cta": {
     "exploreCollection": "Koleksiyonu İncele",
@@ -240,7 +241,8 @@
     "legal": "Yasal",
     "explore": "Keşfet",
     "instructions": "Kullanım Talimatı",
-    "journal": "Dergi"
+    "journal": "Dergi",
+    "deneme1": "Deneme 1"
   },
   "language": {
     "label": "Dil"
@@ -516,5 +518,10 @@
     "eyebrow": "Test",
     "title": "Deneme",
     "intro": "Bu geçici bir deneme sayfasıdır."
+  },
+  "deneme1Page": {
+    "eyebrow": "Test",
+    "title": "Deneme 1",
+    "intro": "Bu geçici Deneme 1 sayfasıdır."
   }
 }
