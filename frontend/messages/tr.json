@@ -511,5 +511,10 @@
     "intro": "Renkli yumuşak lensler üzerine pratik yazılar — ton seçimi, konfor ve günlük hijyen.",
     "readArticle": "Yazıyı oku",
     "backToJournal": "Tüm dergi notları"
+  },
+  "denemePage": {
+    "eyebrow": "Test",
+    "title": "Deneme",
+    "intro": "Bu geçici bir deneme sayfasıdır."
   }
 }

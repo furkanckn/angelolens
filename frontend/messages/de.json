@@ -510,5 +510,10 @@
     "intro": "Praktische Texte zu farbigen weichen Linsen — Farbwahl, Tragekomfort und Alltagshygiene.",
     "readArticle": "Artikel lesen",
     "backToJournal": "Alle Journal-Notizen"
+  },
+  "denemePage": {
+    "eyebrow": "Test",
+    "title": "Deneme",
+    "intro": "Dies ist eine vorübergehende Testseite."
   }
 }

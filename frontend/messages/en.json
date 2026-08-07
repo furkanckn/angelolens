@@ -510,5 +510,10 @@
     "intro": "Practical reading on coloured soft lenses — shade choice, comfort, and everyday hygiene.",
     "readArticle": "Read article",
     "backToJournal": "All journal notes"
+  },
+  "denemePage": {
+    "eyebrow": "Test",
+    "title": "Deneme",
+    "intro": "This is a temporary test page."
   }
 }

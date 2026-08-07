@@ -510,5 +510,10 @@
     "intro": "Letture pratiche sulle lenti morbide colorate — scelta della tonalità, comfort e igiene quotidiana.",
     "readArticle": "Leggi l'articolo",
     "backToJournal": "Tutte le note del journal"
+  },
+  "denemePage": {
+    "eyebrow": "Test",
+    "title": "Deneme",
+    "intro": "Questa è una pagina di prova temporanea."
   }
 }
