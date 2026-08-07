@@ -15,6 +15,7 @@ Apply these rules to every task in this repository.
    - If the tree is clean, run `git pull --rebase origin main`.
    - If there are local changes, commit or stash them safely first, pull/rebase, then restore them.
    - Resolve conflicts without deleting unrelated user work.
+4. Ensure the repository safety hook is active with `git config core.hooksPath .githooks` and `chmod +x .githooks/pre-push`.
 
 ## Production architecture
 
