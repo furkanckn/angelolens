@@ -14,8 +14,7 @@
     "opticians": "شرکای بینایی‌سنجی ما",
     "contact": "تماس",
     "instructions": "دستورالعمل",
-    "journal": "ژورنال",
-    "deneme1": "آزمایش ۱"
+    "journal": "ژورنال"
   },
   "cta": {
     "exploreCollection": "کشف مجموعه",
@@ -241,8 +240,7 @@
     "legal": "حقوقی",
     "explore": "کاوش",
     "instructions": "دستور استفاده",
-    "journal": "ژورنال",
-    "deneme1": "آزمایش ۱"
+    "journal": "ژورنال"
   },
   "language": {
     "label": "زبان"
@@ -512,15 +510,5 @@
     "intro": "متن‌های کاربردی درباره لنزهای نرم رنگی — انتخاب ته رنگ، راحتی و بهداشت روزمره.",
     "readArticle": "خواندن مطلب",
     "backToJournal": "همه یادداشت‌های ژورنال"
-  },
-  "denemePage": {
-    "eyebrow": "تست",
-    "title": "Deneme",
-    "intro": "این یک صفحه آزمایشی موقت است."
-  },
-  "deneme1Page": {
-    "eyebrow": "تست",
-    "title": "آزمایش ۱",
-    "intro": "این صفحه آزمایشی موقت آزمایش ۱ است."
   }
 }

@@ -14,8 +14,7 @@
     "opticians": "شركاؤنا من البصريات",
     "contact": "تواصل",
     "instructions": "التعليمات",
-    "journal": "المجلة",
-    "deneme1": "تجربة 1"
+    "journal": "المجلة"
   },
   "cta": {
     "exploreCollection": "استكشف المجموعة",
@@ -241,8 +240,7 @@
     "legal": "قانوني",
     "explore": "استكشف",
     "instructions": "تعليمات الاستخدام",
-    "journal": "المجلة",
-    "deneme1": "تجربة 1"
+    "journal": "المجلة"
   },
   "language": {
     "label": "اللغة"
@@ -512,15 +510,5 @@
     "intro": "قراءات عملية عن العدسات اللينة الملونة — اختيار الدرجة والراحة والنظافة اليومية.",
     "readArticle": "اقرأ المقال",
     "backToJournal": "كل ملاحظات المجلة"
-  },
-  "denemePage": {
-    "eyebrow": "اختبار",
-    "title": "Deneme",
-    "intro": "هذه صفحة تجريبية مؤقتة."
-  },
-  "deneme1Page": {
-    "eyebrow": "اختبار",
-    "title": "تجربة 1",
-    "intro": "هذه صفحة تجريبية مؤقتة باسم تجربة 1."
   }
 }

@@ -14,8 +14,7 @@
     "opticians": "Our Optician Partners",
     "contact": "Contact",
     "instructions": "Instructions",
-    "journal": "Journal",
-    "deneme1": "Demo 1"
+    "journal": "Journal"
   },
   "cta": {
     "exploreCollection": "Explore the Collection",
@@ -241,8 +240,7 @@
     "legal": "Legal",
     "explore": "Explore",
     "instructions": "Instructions for Use",
-    "journal": "Journal",
-    "deneme1": "Demo 1"
+    "journal": "Journal"
   },
   "language": {
     "label": "Language"
@@ -512,15 +510,5 @@
     "intro": "Practical reading on coloured soft lenses — shade choice, comfort, and everyday hygiene.",
     "readArticle": "Read article",
     "backToJournal": "All journal notes"
-  },
-  "denemePage": {
-    "eyebrow": "Test",
-    "title": "Deneme",
-    "intro": "This is a temporary test page."
-  },
-  "deneme1Page": {
-    "eyebrow": "Test",
-    "title": "Demo 1",
-    "intro": "This is a temporary Demo 1 test page."
   }
 }

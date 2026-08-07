@@ -14,8 +14,7 @@
     "opticians": "Optik Bayilerimiz",
     "contact": "İletişim",
     "instructions": "Talimatlar",
-    "journal": "Dergi",
-    "deneme1": "Deneme 1"
+    "journal": "Dergi"
   },
   "cta": {
     "exploreCollection": "Koleksiyonu İncele",
@@ -241,8 +240,7 @@
     "legal": "Yasal",
     "explore": "Keşfet",
     "instructions": "Kullanım Talimatı",
-    "journal": "Dergi",
-    "deneme1": "Deneme 1"
+    "journal": "Dergi"
   },
   "language": {
     "label": "Dil"
@@ -513,15 +511,5 @@
     "intro": "Renkli yumuşak lensler üzerine pratik yazılar — ton seçimi, konfor ve günlük hijyen.",
     "readArticle": "Yazıyı oku",
     "backToJournal": "Tüm dergi notları"
-  },
-  "denemePage": {
-    "eyebrow": "Test",
-    "title": "Deneme",
-    "intro": "Bu geçici bir deneme sayfasıdır."
-  },
-  "deneme1Page": {
-    "eyebrow": "Test",
-    "title": "Deneme 1",
-    "intro": "Bu geçici Deneme 1 sayfasıdır."
   }
 }

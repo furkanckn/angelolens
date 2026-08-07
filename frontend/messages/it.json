@@ -14,8 +14,7 @@
     "opticians": "I Nostri Partner Ottici",
     "contact": "Contatti",
     "instructions": "Istruzioni",
-    "journal": "Journal",
-    "deneme1": "Prova 1"
+    "journal": "Journal"
   },
   "cta": {
     "exploreCollection": "Esplora la Collezione",
@@ -241,8 +240,7 @@
     "legal": "Legale",
     "explore": "Esplora",
     "instructions": "Istruzioni d’uso",
-    "journal": "Journal",
-    "deneme1": "Prova 1"
+    "journal": "Journal"
   },
   "language": {
     "label": "Lingua"
@@ -512,15 +510,5 @@
     "intro": "Letture pratiche sulle lenti morbide colorate — scelta della tonalità, comfort e igiene quotidiana.",
     "readArticle": "Leggi l'articolo",
     "backToJournal": "Tutte le note del journal"
-  },
-  "denemePage": {
-    "eyebrow": "Test",
-    "title": "Deneme",
-    "intro": "Questa è una pagina di prova temporanea."
-  },
-  "deneme1Page": {
-    "eyebrow": "Test",
-    "title": "Prova 1",
-    "intro": "Questa è la pagina di prova temporanea Prova 1."
   }
 }

@@ -14,8 +14,7 @@
     "opticians": "Unsere Optikpartner",
     "contact": "Kontakt",
     "instructions": "Anleitung",
-    "journal": "Journal",
-    "deneme1": "Test 1"
+    "journal": "Journal"
   },
   "cta": {
     "exploreCollection": "Kollektion entdecken",
@@ -241,8 +240,7 @@
     "legal": "Rechtliches",
     "explore": "Entdecken",
     "instructions": "Gebrauchsanweisung",
-    "journal": "Journal",
-    "deneme1": "Test 1"
+    "journal": "Journal"
   },
   "language": {
     "label": "Sprache"
@@ -512,15 +510,5 @@
     "intro": "Praktische Texte zu farbigen weichen Linsen — Farbwahl, Tragekomfort und Alltagshygiene.",
     "readArticle": "Artikel lesen",
     "backToJournal": "Alle Journal-Notizen"
-  },
-  "denemePage": {
-    "eyebrow": "Test",
-    "title": "Deneme",
-    "intro": "Dies ist eine vorübergehende Testseite."
-  },
-  "deneme1Page": {
-    "eyebrow": "Test",
-    "title": "Test 1",
-    "intro": "Dies ist die vorübergehende Testseite Test 1."
   }
 }
