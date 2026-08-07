@@ -11,7 +11,7 @@ permissions:
 
 concurrency:
   group: hostinger-static-deploy
-  cancel-in-progress: true
+  # Let the active deployment finish; GitHub will retain the newest pending push.\n  cancel-in-progress: false
 
 jobs:
   # Static site must publish even if Laravel SSH fails —
