@@ -166,6 +166,11 @@ export default async function LocaleLayout({ children, params }: Props) {
             <div className="angelo-splash__bar" aria-hidden />
           </div>
         </div>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){setTimeout(function(){var s=document.getElementById("angelo-splash");if(!s||s.classList.contains("is-done"))return;s.classList.add("is-done");document.documentElement.classList.remove("angelo-splash-active");setTimeout(function(){s.remove&&s.remove()},800)},3200)})();`,
+          }}
+        />
         <PageLoader />
         <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
         <NextIntlClientProvider messages={messages}>

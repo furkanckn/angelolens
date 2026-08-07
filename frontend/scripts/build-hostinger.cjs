@@ -15,9 +15,9 @@ const outDir = path.join(root, "out");
 const publicHtml = path.join(root, "public_html");
 
 /**
- * Static hosting cannot execute Next.js middleware. This root page performs the
- * same first-visit locale choice in the browser: saved choice → IP country →
- * browser language → English.
+ * Static hosting cannot execute Next.js middleware. This root page performs a
+ * browser-side locale choice: saved cookie → browser language → English.
+ * No third-party geo APIs (mobile Safari often fails those challenges).
  */
 const hostingerLocaleIndex = `<!doctype html>
 <html lang="en">
@@ -25,54 +25,68 @@ const hostingerLocaleIndex = `<!doctype html>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="noindex,follow">
+  <meta name="theme-color" content="#0e0d0c">
   <title>Angelo Lens</title>
   <style>
-    html,body{height:100%;margin:0;background:#f4f0e8}
-    body{display:grid;place-items:center;color:#27231f;font:14px system-ui,sans-serif}
+    html,body{height:100%;margin:0;background:#0e0d0c}
+    body{
+      display:grid;place-items:center;color:#f7f4ef;
+      font:400 14px/1.4 system-ui,-apple-system,sans-serif;
+      background:
+        radial-gradient(ellipse 70% 55% at 50% 42%, rgba(176,141,87,.18), transparent 62%),
+        #0e0d0c;
+    }
+    .wrap{display:flex;flex-direction:column;align-items:center;gap:1.25rem;padding:2rem;text-align:center}
+    .logo{width:min(200px,58vw);height:auto;opacity:.96}
+    .rule{width:3.25rem;height:1px;background:linear-gradient(90deg,transparent,#d4b87a,#b08d57,transparent);opacity:.85}
+    .mark{margin:0;letter-spacing:.38em;text-indent:.38em;text-transform:uppercase;font-size:.72rem;color:rgba(247,244,239,.78)}
+    .bar{position:relative;width:min(9rem,42vw);height:1px;overflow:hidden;background:rgba(247,244,239,.12);border-radius:999px}
+    .bar:after{content:"";position:absolute;inset:0 auto 0 0;width:40%;background:linear-gradient(90deg,transparent,#d4b87a,#b08d57,transparent);animation:scan 1.2s ease-in-out infinite}
+    @keyframes scan{0%{transform:translateX(-120%)}100%{transform:translateX(320%)}}
+    @media (prefers-reduced-motion:reduce){.bar:after{animation:none;width:100%;opacity:.5}}
   </style>
   <script>
     (function () {
       var supported = ["en", "tr", "de", "it", "ru", "ar", "fa"];
-      var arabicCountries = ["SA","AE","QA","KW","BH","OM","JO","LB","IQ","EG","MA","DZ","TN","LY","SY","PS","YE","SD","SO","MR","DJ","KM"];
       var finished = false;
 
       function isSupported(locale) {
         return supported.indexOf(locale) !== -1;
       }
 
-      function countryToLocale(country) {
-        var code = String(country || "").trim().toUpperCase();
-        if (code === "TR") return "tr";
-        if (code === "DE") return "de";
-        if (code === "IT") return "it";
-        if (code === "RU") return "ru";
-        if (code === "IR") return "fa";
-        if (arabicCountries.indexOf(code) !== -1) return "ar";
-        return "en";
-      }
-
       function browserLocale() {
         var languages = navigator.languages || [navigator.language || "en"];
         for (var i = 0; i < languages.length; i += 1) {
-          var locale = String(languages[i]).toLowerCase().split("-")[0];
+          var locale = String(languages[i] || "").toLowerCase().split("-")[0];
           if (isSupported(locale)) return locale;
         }
         return "en";
       }
 
       function savedLocale() {
-        var match = document.cookie.match(/(?:^|;\\s*)NEXT_LOCALE=([^;]+)/);
-        var locale = match ? decodeURIComponent(match[1]).toLowerCase() : "";
-        return isSupported(locale) ? locale : "";
+        try {
+          var match = document.cookie.match(/(?:^|;\\s*)NEXT_LOCALE=([^;]+)/);
+          var locale = match ? decodeURIComponent(match[1]).toLowerCase() : "";
+          return isSupported(locale) ? locale : "";
+        } catch (e) {
+          return "";
+        }
       }
 
       function go(locale) {
         if (finished) return;
         finished = true;
         var selected = isSupported(locale) ? locale : "en";
-        var secure = location.protocol === "https:" ? "; Secure" : "";
-        document.cookie = "NEXT_LOCALE=" + selected + "; Max-Age=31536000; Path=/; SameSite=Lax" + secure;
-        location.replace("/" + selected + "/" + location.search + location.hash);
+        try {
+          var secure = location.protocol === "https:" ? "; Secure" : "";
+          document.cookie = "NEXT_LOCALE=" + selected + "; Max-Age=31536000; Path=/; SameSite=Lax" + secure;
+        } catch (e) {}
+        var target = "/" + selected + "/" + (location.search || "") + (location.hash || "");
+        try {
+          location.replace(target);
+        } catch (e) {
+          location.href = target;
+        }
       }
 
       var saved = savedLocale();
@@ -81,34 +95,20 @@ const hostingerLocaleIndex = `<!doctype html>
         return;
       }
 
-      var fallback = browserLocale();
-      var controller = typeof AbortController === "function" ? new AbortController() : null;
-      var timer = setTimeout(function () {
-        if (controller) controller.abort();
-        go(fallback);
-      }, 1500);
-
-      fetch("https://ipapi.co/country_code/", {
-        headers: { Accept: "text/plain" },
-        signal: controller ? controller.signal : undefined
-      })
-        .then(function (response) {
-          if (!response.ok) throw new Error("Geo lookup failed");
-          return response.text();
-        })
-        .then(function (country) {
-          clearTimeout(timer);
-          go(countryToLocale(country));
-        })
-        .catch(function () {
-          clearTimeout(timer);
-          go(fallback);
-        });
+      // Instant, offline-safe choice — never wait on third-party geo APIs.
+      go(browserLocale());
     })();
   </script>
   <noscript><meta http-equiv="refresh" content="0;url=/en/"></noscript>
 </head>
-<body aria-live="polite">Angelo Lens</body>
+<body>
+  <div class="wrap" aria-live="polite">
+    <img class="logo" src="/images/brand/logo-white.png" width="200" height="48" alt="Angelo Lens">
+    <div class="rule" aria-hidden="true"></div>
+    <p class="mark">Angelo Lens</p>
+    <div class="bar" aria-hidden="true"></div>
+  </div>
+</body>
 </html>
 `;
 
