@@ -56,6 +56,7 @@ export function LanguageSwitcher({
     // Static Hostinger exports have no middleware response to persist this.
     // Remember the visitor's explicit choice for the next visit to `/`.
     const secure = window.location.protocol === "https:" ? "; Secure" : "";
+    // eslint-disable-next-line react-hooks/immutability -- Static hosting has no response middleware to set this preference cookie.
     document.cookie =
       `NEXT_LOCALE=${code}; Max-Age=31536000; Path=/; SameSite=Lax${secure}`;
 
