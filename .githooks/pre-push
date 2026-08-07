@@ -1,0 +1,14 @@
+#!/bin/sh
+set -eu
+
+REPO_ROOT=$(git rev-parse --show-toplevel)
+cd "$REPO_ROOT/frontend"
+
+if [ ! -d node_modules ]; then
+  npm ci
+fi
+
+echo "Running AngeloLens production checks before push..."
+npm run lint
+npm run build:hostinger
+echo "Production checks passed."
