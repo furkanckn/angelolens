@@ -17,6 +17,22 @@ Apply these rules to every task in this repository.
    - Resolve conflicts without deleting unrelated user work.
 4. Ensure the repository safety hook is active with `git config core.hooksPath .githooks` and `chmod +x .githooks/pre-push`.
 
+## Remote awareness — mandatory
+
+- At the start of every task and again immediately before committing, run `git fetch --prune origin`.
+- Never begin new edits while the local branch is behind `origin/main`.
+- Inspect incoming work before integrating it:
+  - `git log --oneline --decorate HEAD..origin/main`
+  - `git diff --stat HEAD..origin/main`
+  - Read the full diff for incoming workflow, hosting, dependency, configuration, schema, and architecture changes.
+- Treat remote commits as intentional production changes made by the connected GitHub maintainer. Understand their purpose from commit messages, diffs, documentation, and related code; preserve them unless the user explicitly asks to revert them.
+- Synchronize safely:
+  - Clean tree: `git pull --rebase origin main`.
+  - Dirty or untracked tree: preserve everything with a safe commit or `git stash push -u`, pull/rebase, then restore it.
+  - On conflicts, reason about both sides and keep both intended behaviors. Never blindly choose “ours” or “theirs”.
+- After synchronizing, re-read changed project rules and hosting workflows, then rerun checks affected by incoming changes.
+- If the reason for an incoming change is genuinely unclear, stop and ask instead of undoing or rewriting it.
+
 ## Production architecture
 
 - Production is Hostinger Premium shared hosting, not a VPS.
