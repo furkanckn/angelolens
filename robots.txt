@@ -1,0 +1,7 @@
+User-Agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api/
+
+Host: https://angelolens.com
+Sitemap: https://angelolens.com/sitemap.xml

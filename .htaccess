@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^livewire(?:/.*)?$ panel/index.php [L,QSA]
+</IfModule>
+
+<IfModule mod_headers.c>
+    <Files "index.html">
+        Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+        Header set Pragma "no-cache"
+        Header set Expires "0"
+    </Files>
+</IfModule>
