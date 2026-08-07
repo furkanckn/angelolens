@@ -50,11 +50,8 @@ jobs:
       - name: Publish static files to hostinger branch
         working-directory: frontend/public_html
         run: |
-          printf '%s\n' \
-            '<IfModule mod_rewrite.c>' \
-            '    RewriteEngine On' \
-            '    RewriteRule ^livewire(?:/.*)?$ panel/index.php [L,QSA]' \
-            '</IfModule>' > .htaccess
+          # .htaccess is written by build:hostinger (locale 302 + Livewire + no-cache)
+          test -f .htaccess
           ln -sfn ../laravel_app/backend/public panel
           touch .nojekyll
           git init
