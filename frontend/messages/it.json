@@ -15,7 +15,7 @@
     "contact": "Contatti",
     "instructions": "Istruzioni",
     "journal": "Journal",
-    "deneme1": "Deneme 1"
+    "deneme1": "Prova 1"
   },
   "cta": {
     "exploreCollection": "Esplora la Collezione",
@@ -242,7 +242,7 @@
     "explore": "Esplora",
     "instructions": "Istruzioni d’uso",
     "journal": "Journal",
-    "deneme1": "Deneme 1"
+    "deneme1": "Prova 1"
   },
   "language": {
     "label": "Lingua"
@@ -520,7 +520,7 @@
   },
   "deneme1Page": {
     "eyebrow": "Test",
-    "title": "Deneme 1",
-    "intro": "Questa è la pagina di prova temporanea Deneme 1."
+    "title": "Prova 1",
+    "intro": "Questa è la pagina di prova temporanea Prova 1."
   }
 }

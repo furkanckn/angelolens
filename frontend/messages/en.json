@@ -15,7 +15,7 @@
     "contact": "Contact",
     "instructions": "Instructions",
     "journal": "Journal",
-    "deneme1": "Deneme 1"
+    "deneme1": "Demo 1"
   },
   "cta": {
     "exploreCollection": "Explore the Collection",
@@ -242,7 +242,7 @@
     "explore": "Explore",
     "instructions": "Instructions for Use",
     "journal": "Journal",
-    "deneme1": "Deneme 1"
+    "deneme1": "Demo 1"
   },
   "language": {
     "label": "Language"
@@ -520,7 +520,7 @@
   },
   "deneme1Page": {
     "eyebrow": "Test",
-    "title": "Deneme 1",
-    "intro": "This is temporary test page Deneme 1."
+    "title": "Demo 1",
+    "intro": "This is a temporary Demo 1 test page."
   }
 }

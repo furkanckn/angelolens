@@ -15,7 +15,7 @@
     "contact": "تماس",
     "instructions": "دستورالعمل",
     "journal": "ژورنال",
-    "deneme1": "Deneme 1"
+    "deneme1": "آزمایش ۱"
   },
   "cta": {
     "exploreCollection": "کشف مجموعه",
@@ -242,7 +242,7 @@
     "explore": "کاوش",
     "instructions": "دستور استفاده",
     "journal": "ژورنال",
-    "deneme1": "Deneme 1"
+    "deneme1": "آزمایش ۱"
   },
   "language": {
     "label": "زبان"
@@ -520,7 +520,7 @@
   },
   "deneme1Page": {
     "eyebrow": "تست",
-    "title": "Deneme 1",
-    "intro": "این صفحه آزمایشی موقت Deneme 1 است."
+    "title": "آزمایش ۱",
+    "intro": "این صفحه آزمایشی موقت آزمایش ۱ است."
   }
 }

@@ -15,7 +15,7 @@
     "contact": "تواصل",
     "instructions": "التعليمات",
     "journal": "المجلة",
-    "deneme1": "Deneme 1"
+    "deneme1": "تجربة 1"
   },
   "cta": {
     "exploreCollection": "استكشف المجموعة",
@@ -242,7 +242,7 @@
     "explore": "استكشف",
     "instructions": "تعليمات الاستخدام",
     "journal": "المجلة",
-    "deneme1": "Deneme 1"
+    "deneme1": "تجربة 1"
   },
   "language": {
     "label": "اللغة"
@@ -520,7 +520,7 @@
   },
   "deneme1Page": {
     "eyebrow": "اختبار",
-    "title": "Deneme 1",
-    "intro": "هذه صفحة تجريبية مؤقتة Deneme 1."
+    "title": "تجربة 1",
+    "intro": "هذه صفحة تجريبية مؤقتة باسم تجربة 1."
   }
 }
