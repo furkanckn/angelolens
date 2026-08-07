@@ -22,6 +22,8 @@ export function Header() {
   }, []);
 
   useEffect(() => {
+    // Closing after a client-side route change is intentional UI synchronization.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setOpen(false);
   }, [pathname]);
 
