@@ -11,7 +11,6 @@ import {
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
-import { PageLoader } from "@/components/PageLoader";
 import { SkipToContent } from "@/components/SkipToContent";
 import { SiteImagesProvider } from "@/components/SiteImagesProvider";
 import { isRtlLocale, routing } from "@/i18n/routing";
@@ -140,38 +139,9 @@ export default async function LocaleLayout({ children, params }: Props) {
     <html
       lang={locale}
       dir={dir}
-      className={`${display.variable} ${body.variable} ${arabic.variable} ${persian.variable} h-full antialiased angelo-splash-active`}
+      className={`${display.variable} ${body.variable} ${arabic.variable} ${persian.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-cream text-ink">
-        <div
-          id="angelo-splash"
-          className="angelo-splash"
-          role="status"
-          aria-live="polite"
-          aria-label="Angelo Lens"
-        >
-          <div className="angelo-splash__inner">
-            {/* Plain img: paints before Next/Image JS on static Hostinger */}
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              className="angelo-splash__logo"
-              src="/images/brand/logo-white.png"
-              alt="Angelo Lens"
-              width={220}
-              height={52}
-              decoding="async"
-            />
-            <div className="angelo-splash__rule" aria-hidden />
-            <p className="angelo-splash__mark">Angelo Lens</p>
-            <div className="angelo-splash__bar" aria-hidden />
-          </div>
-        </div>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){setTimeout(function(){var s=document.getElementById("angelo-splash");if(!s||s.classList.contains("is-done"))return;s.classList.add("is-done");document.documentElement.classList.remove("angelo-splash-active");setTimeout(function(){s.remove&&s.remove()},800)},3200)})();`,
-          }}
-        />
-        <PageLoader />
         <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
         <NextIntlClientProvider messages={messages}>
           <SiteImagesProvider initial={siteImages}>
