@@ -46,7 +46,6 @@ export function Header() {
     { href: "/collections", label: t("collections") },
     { href: "/about", label: t("about") },
     { href: "/opticians", label: t("opticians") },
-    { href: "/fuar", label: t("fair") },
     { href: "/talimatlar", label: t("instructions") },
     { href: "/contact", label: t("contact") },
   ] as const;

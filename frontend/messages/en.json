@@ -14,8 +14,7 @@
     "opticians": "Our Optician Partners",
     "contact": "Contact",
     "instructions": "Instructions",
-    "journal": "Journal",
-    "fair": "Fair"
+    "journal": "Journal"
   },
   "cta": {
     "exploreCollection": "Explore the Collection",
@@ -241,8 +240,7 @@
     "legal": "Legal",
     "explore": "Explore",
     "instructions": "Instructions for Use",
-    "journal": "Journal",
-    "fair": "Fair"
+    "journal": "Journal"
   },
   "language": {
     "label": "Language"
@@ -512,12 +510,5 @@
     "intro": "Practical reading on coloured soft lenses — shade choice, comfort, and everyday hygiene.",
     "readArticle": "Read article",
     "backToJournal": "All journal notes"
-  },
-  "fairPage": {
-    "eyebrow": "Events",
-    "title": "Fair",
-    "intro": "Where Angelo Lens meets the industry — exhibitions, showcases, and brand moments.",
-    "comingSoonTitle": "Coming very soon",
-    "comingSoonBody": "Fair dates, locations, and visitor details are being prepared. Check back shortly, or write to us for early information."
   }
 }

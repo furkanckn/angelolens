@@ -14,8 +14,7 @@
     "opticians": "Optik Bayilerimiz",
     "contact": "İletişim",
     "instructions": "Talimatlar",
-    "journal": "Dergi",
-    "fair": "Fuar"
+    "journal": "Dergi"
   },
   "cta": {
     "exploreCollection": "Koleksiyonu İncele",
@@ -241,8 +240,7 @@
     "legal": "Yasal",
     "explore": "Keşfet",
     "instructions": "Kullanım Talimatı",
-    "journal": "Dergi",
-    "fair": "Fuar"
+    "journal": "Dergi"
   },
   "language": {
     "label": "Dil"
@@ -513,12 +511,5 @@
     "intro": "Renkli yumuşak lensler üzerine pratik yazılar — ton seçimi, konfor ve günlük hijyen.",
     "readArticle": "Yazıyı oku",
     "backToJournal": "Tüm dergi notları"
-  },
-  "fairPage": {
-    "eyebrow": "Etkinlikler",
-    "title": "Fuar",
-    "intro": "Angelo Lens’in sektörel buluşmaları — fuarlar, vitrinler ve marka anları.",
-    "comingSoonTitle": "Çok yakında",
-    "comingSoonBody": "Fuar tarihleri, yerleri ve ziyaretçi bilgileri hazırlanıyor. Kısa süre içinde burada paylaşacağız; erken bilgi için bize yazabilirsiniz."
   }
 }

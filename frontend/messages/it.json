@@ -14,8 +14,7 @@
     "opticians": "I Nostri Partner Ottici",
     "contact": "Contatti",
     "instructions": "Istruzioni",
-    "journal": "Journal",
-    "fair": "Fiera"
+    "journal": "Journal"
   },
   "cta": {
     "exploreCollection": "Esplora la Collezione",
@@ -241,8 +240,7 @@
     "legal": "Legale",
     "explore": "Esplora",
     "instructions": "Istruzioni d’uso",
-    "journal": "Journal",
-    "fair": "Fiera"
+    "journal": "Journal"
   },
   "language": {
     "label": "Lingua"
@@ -512,12 +510,5 @@
     "intro": "Letture pratiche sulle lenti morbide colorate — scelta della tonalità, comfort e igiene quotidiana.",
     "readArticle": "Leggi l'articolo",
     "backToJournal": "Tutte le note del journal"
-  },
-  "fairPage": {
-    "eyebrow": "Eventi",
-    "title": "Fiera",
-    "intro": "Dove Angelo Lens incontra il settore — fiere, vetrine e momenti di marca.",
-    "comingSoonTitle": "Molto presto",
-    "comingSoonBody": "Date, luoghi e dettagli per i visitatori sono in preparazione. Torna a breve oppure scrivici per informazioni anticipate."
   }
 }
